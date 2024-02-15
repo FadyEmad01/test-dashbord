@@ -1,0 +1,36 @@
+#myAccordion .purple {
+    background-color: #E8DDFF;
+}
+
+#myAccordion .mint {
+    background-color: #E8FFFF;
+}
+
+#myAccordion .lightOrange {
+    background-color: #FFF2D9;
+}
+
+#myAccordion .lightBlue {
+    background-color: #DBF0FF;
+}
+
+#myAccordion .lightPink {
+    background-color: #FFE4EF;
+}
+#myAccordion .lightYellow {
+    background-color: #FDFFF4;
+}
+#myAccordion .lightPurple {
+    background-color: #EBEAFF;
+}
+#myAccordion .accordion-button {
+    background-color: #EEEEEE;
+}
+.page {
+    background-color: #e7e6e6; 
+    min-height: 100vh;
+}
+.project-design .main-content {
+    height: auto;
+    background-color: #FEFEFE;
+  }

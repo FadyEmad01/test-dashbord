@@ -1,0 +1,106 @@
+#cards .card,
+#cards .card-body {
+    border-radius: 15px;
+}
+
+#cards .card-body-pink {
+    background-color: #F6D9E1;
+}
+
+#cards .card-title-pink {
+    background-color: #FFFFFF;
+    color: #F6D9E1;
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 100px;
+    padding: 10px 17px;
+    font-size: 20px;
+
+}
+
+#cards .btn-group-pink {
+    background-color: #FFE8EF;
+}
+
+#cards .card-body-blue {
+    background-color: #D3EAFF;
+}
+
+#cards .card-title-blue {
+    background-color: #FFFFFF;
+    color: #D3EAFF;
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 100px;
+    padding: 10px 17px;
+    font-size: 20px;
+
+}
+
+#cards .btn-group-blue {
+    background-color: #E9F5FF;
+}
+
+#cards .card-body-yellow {
+    background-color: #F8EFE2;
+}
+
+#cards .card-title-yellow {
+    background-color: #FFFFFF;
+    color: #F8EFE2;
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 100px;
+    padding: 10px 17px;
+    font-size: 20px;
+
+}
+
+#cards .btn-group-yellow {
+    background-color: #FAF5EC;
+}
+
+#cards .card-body-purple {
+    background-color: #E1E2F6;
+}
+
+#cards .card-title-purple {
+    background-color: #FFFFFF;
+    color: #E1E2F6;
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 100px;
+    padding: 10px 17px;
+    font-size: 20px;
+
+}
+
+#cards .btn-group-purple {
+    background-color: #FCF9FF;
+}
+
+#end table th,
+td {
+    border: none;
+}
+
+#end .anlysis-blue {
+    background-color: #BDE2F1;
+    color: #FFFFFF;
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 100px;
+    padding: 10px 17px;
+    font-size: 20px;
+}
+
+#end .anlysis-green {
+    background-color: #A1E8CB;
+    color: #FFFFFF;
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 100px;
+    padding: 10px 17px;
+    font-size: 20px;
+}
+
