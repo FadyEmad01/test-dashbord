@@ -12,9 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+    <!-- end font  -->
     <link rel="stylesheet" href="./assests/vendors/font-awesome/all.min.css" />
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/SHARED.css">
     <title>Document</title>
 </head>
 
@@ -32,7 +38,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="index.html" class="active">
+                    <a href="index.html">
                         <i class="fa-solid fa-table"></i>
                         <span>الصفحه الرئيسية</span>
                     </a>
@@ -63,13 +69,13 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#attendance">
+                    <a href="Attendnce.html">
                         <i class="fa-solid fa-pen-to-square"></i>
                         <span>تسجيل الحضور</span>
                     </a>
                 </li>
                 <li>
-                    <a href="duties.html">
+                    <a href="HomeWork.html">
                         <i class="fa-solid fa-book-open"></i>
                         <span>الواجبات</span>
                     </a>
@@ -128,7 +134,7 @@
                                 <div class="col-9 col-md-3 col-sm-6 mx-auto my-2">
                                     <div class="card ">
                                         <div class="card-body card-body-pink">
-                                            <a class="card-title card-title-pink"><i class="fa-solid fa-e"></i></a>
+                                            <a class="card-title card-title-pink" style="font-family: 'Montserrat-Arabic';"><i class="fa-solid fa-e"></i></a>
                                             <p class="card-text mt-3"> اللغه الانجليزية</p>
 
                                             <div class="btn-group btn-group-pink w-100" role="group"
@@ -148,7 +154,7 @@
                                 <div class="col-9 col-md-3 col-sm-6 mx-auto my-2">
                                     <div class="card">
                                         <div class="card-body card-body-blue">
-                                            <a class="card-title card-title-blue "><i class="fa-solid fa-e"></i></a>
+                                            <a class="card-title card-title-blue "><img src="assets/images/design.png" alt=""></a>
                                             <p class="card-text mt-3"> اللغه الانجليزية</p>
 
                                             <div class="btn-group btn-group-blue w-100" role="group"
@@ -168,7 +174,7 @@
                                 <div class="col-9 col-md-3 col-sm-6 mx-auto my-2">
                                     <div class="card">
                                         <div class="card-body card-body-yellow">
-                                            <a class="card-title card-title-yellow"><i class="fa-solid fa-e"></i></a>
+                                            <a class="card-title card-title-yellow" ><img src="assets/images/p2.png" alt=""></a>
                                             <p class="card-text mt-3"> اللغه الانجليزية</p>
 
                                             <div class="btn-group btn-group-yellow w-100" role="group"
@@ -188,7 +194,7 @@
                                 <div class="col-9 col-md-3 col-sm-6 mx-auto my-2">
                                     <div class="card">
                                         <div class="card-body card-body-purple">
-                                            <a class="card-title card-title-purple"><i class="fa-solid fa-e"></i></a>
+                                            <a class="card-title card-title-purple"><img src="assets/images/code.png" alt=""></a>
                                             <p class="card-text mt-3"> اللغه الانجليزية</p>
 
                                             <div class="btn-group btn-group-purple w-100" role="group"
@@ -617,26 +623,17 @@
                                 <!-- table -->
                                 <div class="col-12 col-lg-6  mx-auto my-2">
                                     <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
+                                        <div class="card-body pb-0">
+                                            <div class="row align-items-center">
                                                 <div class="col-lg-4 col-6 ">
-                                                    <h5 class="card-title">افضل ١٠ طلاب في</h5>
+                                                    <h5 class="card-title">افضل ١٠ طلاب </h5>
                                                 </div>
                                                 <div class="col-md-4 col-6">
                                                     <select id="birthMonth" class="form-select">
                                                         <option value="" disabled selected>اختر...</option>
                                                         <option value="January">January</option>
                                                         <option value="February">February</option>
-                                                        <option value="March">March</option>
-                                                        <option value="April">April</option>
-                                                        <option value="May">May</option>
-                                                        <option value="June">June</option>
-                                                        <option value="July">July</option>
-                                                        <option value="August">August</option>
-                                                        <option value="September">September</option>
-                                                        <option value="October">October</option>
-                                                        <option value="November">November</option>
-                                                        <option value="December">December</option>
+                                                        <option value="February">February</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-md-4 col-6 mx-auto">
@@ -676,54 +673,119 @@
                                         </div>
 
                                         <!-- Table with stripped rows -->
-                                        <table class="table datatable">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">التقييم</th>
-                                                    <th scope="col">الاسم</th>
-                                                    <th scope="col">الكود</th>
-                                                    <th scope="col">النسبة</th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Brandon Jacob</td>
-                                                    <td>Designer</td>
-                                                    <td>28</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Bridie Kessler</td>
-                                                    <td>Developer</td>
-                                                    <td>35</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Ashleigh Langosh</td>
-                                                    <td>Finance</td>
-                                                    <td>45</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">4</th>
-                                                    <td>Angus Grady</td>
-                                                    <td>HR</td>
-                                                    <td>34</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">5</th>
-                                                    <td>Raheem Lehner</td>
-                                                    <td>Dynamic Division Officer</td>
-                                                    <td>47</td>
-
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="tabel-contaner">
+                                            <table class="table datatable">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">التقييم</th>
+                                                        <th scope="col">الاسم</th>
+                                                        <th scope="col">الكود</th>
+                                                        <th scope="col">النسبة</th>
+    
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr><tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr><tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr><tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr><tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr><tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr><tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr><tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr><tr>
+                                                        <th scope="row">1</th>
+                                                        <td>لاتليشسهه</td>
+                                                        <td>Designer</td>
+                                                        <td>28</td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Bridie Kessler</td>
+                                                        <td>Developer</td>
+                                                        <td>35</td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Ashleigh Langosh</td>
+                                                        <td>Finance</td>
+                                                        <td>45</td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Angus Grady</td>
+                                                        <td>HR</td>
+                                                        <td>34</td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Raheem Lehner</td>
+                                                        <td>Dynamic Division Officer</td>
+                                                        <td>47</td>
+    
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
                                         <!-- End Table with stripped rows -->
 
                                     </div>
@@ -734,8 +796,8 @@
                                         <div class="card">
                                             <div class="card-body pb-0">
                                                 <!--  -->
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6 col-md-12 col-12 ">
                                                         <h5 class="card-title">إحصائيات</h5>
                                                     </div>
 
@@ -788,7 +850,7 @@
                                             </div>
                                             <div class="row align-items-center">
                                                 <div class="col-6 d-flex align-items-center">
-                                                    <div class="anlysis-blue m-1"><a href="" class="card-title"><i
+                                                    <div class="anlysis-blue m-1"><a href="" class="card-title" style="color: white;"><i
                                                                 class="fa-solid fa-user"></i></a>
                                                     </div>
                                                     <div>
@@ -796,9 +858,14 @@
                                                         <p class="m-0">١٢٠ طالب</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-6"> <div id="donutChart" style="min-height: 200px; width: 100%;"
-                                                    class="echart col-12 "></div></div>
-                                               
+                                                <div class="col-6">
+                                                    <div id="donutChart" style="max-height: 150px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                     aspect-ratio: auto 624 / 559;"
+                                                        class="echart col-12 "></div>
+                                                </div>
+
 
                                             </div>
                                             <!-- Donut Chart -->
@@ -808,7 +875,7 @@
                                                     echarts.init(document.querySelector("#donutChart"))
                                                         .setOption({
                                                             tooltip: {
-                                                                trigger: 'item'
+                                                                trigger: ''
                                                             },
                                                             legend: {
                                                                 show: false,
@@ -865,7 +932,7 @@
                                         <div class="card">
                                             <div class="card-body pb-0">
                                                 <!--  -->
-                                                <div class="row">
+                                                <div class="row align-items-center" >
                                                     <div class="col-lg-6 col-md-12 col-12">
                                                         <h5 class="card-title">إحصائيات</h5>
                                                     </div>
@@ -919,7 +986,7 @@
                                             </div>
                                             <div class="row align-items-center">
                                                 <div class="col-6 d-flex align-items-center">
-                                                    <div class="anlysis-green m-1"><a href="" class="card-title"><i
+                                                    <div class="anlysis-green m-1"><a href="" class="card-title" style="color: white;"><i
                                                                 class="fa-solid fa-user"></i></a>
                                                     </div>
                                                     <div>
@@ -927,9 +994,14 @@
                                                         <p class="m-0">١٢٠ طالب</p>
                                                     </div>
                                                 </div>
-                                                
-                                                    <div class="col-6"> <div id="donutChart-2" style="min-height: 200px; width: 100%;"
-                                                        class="echart col-12 "></div></div>
+
+                                                <div class="col-6">
+                                                    <div id="donutChart-2" style="max-height: 150px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                     aspect-ratio: auto 624 / 559;"
+                                                        class="echart col-12 "></div>
+                                                </div>
 
                                             </div>
                                             <!-- Donut Chart -->
@@ -939,7 +1011,7 @@
                                                     echarts.init(document.querySelector("#donutChart-2"))
                                                         .setOption({
                                                             tooltip: {
-                                                                trigger: 'item'
+                                                                trigger: ''
                                                             },
                                                             legend: {
                                                                 show: false,

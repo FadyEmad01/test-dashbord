@@ -1,3 +1,17 @@
+@import url("./SHARED.css");
+*{
+    font-family: "Noto Naskh Arabic", serif;
+}
+#myAccordion .accordion-body h5 {
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-5);
+    color: var(--font-c);
+}
+#myAccordion .accordion-body p {
+    font-size: var(--font-s-11);
+    font-weight: var(--font-w-5);
+    color: var(--font-c);
+}
 #myAccordion .purple {
     background-color: #E8DDFF;
 }

@@ -3,10 +3,35 @@
   src: url('../fonts/Montserrat-Arabic-Regular.ttf') format('truetype');
 }
 
+
+/* .noto-naskh arabic-<uniquifier> {
+  font-family: "Noto Naskh Arabic", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+:root {
+  --font-c: #073051;
+  --font-s-12: 12px;
+  --font-s-18: 18px;
+  --font-s-25: 25px;
+  --font-s-22: 22px;
+  --font-s-16: 16px;
+  --font-s-14: 14px;
+  --font-w-7: 700;
+  --font-w-4: 400;
+  --font-w-5: 500;
+  --font-w-6: 600;
+  /* weight 600 is bold in Montserrat family*/
+  --font-f: 'Noto Naskh Arabic', serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-f);
 }
 
 ul {
@@ -16,6 +41,68 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.sidebar span {
+  font-size: var(--font-s-18);
+  font-weight: var(--font-w-6);
+}
+
+.header h3 {
+  font-size: var(--font-s-25);
+  font-weight: var(--font-w-7);
+  color: var(--font-c);
+}
+
+.header span {
+  font-size: var(--font-s-16);
+  font-weight: var(--font-w-4);
+  color: var(--font-c);
+}
+
+#cards .card{
+  border: none;
+}
+#cards p {
+  font-family: var(--font-f);
+  font-size: var(--font-s-16);
+  color: var(--font-c);
+  font-weight: var(--font-w-6);
+}
+
+#chart-1 h5 {
+  font-size: var(--font-w-6);
+  font-size: var(--font-s-22);
+  font-family: var(--font-f);
+  color: var(--font-c);
+}
+#chart-1 .card{
+  border: none;
+}
+
+#end .card-title {
+  font-size: var(--font-s-18);
+  font-family: var(--font-f);
+  font-weight: var(--font-w-6);
+  color: var(--font-c);
+}
+
+#end button {
+  font-family: var(--font-f);
+  font-size: var(--font-s-12);
+  font-weight: var(--font-w-4);
+}
+
+#end .tabel-contaner {
+  overflow-y: auto; 
+  max-height: 370px;
+}
+#end .card{
+  height: 100%;
+  border: none;
+}
+#end .card-body{
+
 }
 
 /* .btn {
@@ -45,7 +132,7 @@ a {
 .page {
   display: flex;
   background-color: #e7e6e6;
-  
+
 }
 
 /* start sidebar  */
@@ -455,14 +542,16 @@ a {
 
 
 }
-.logout-card{
+
+.logout-card {
   background: #FFF;
-  
+
 }
-.button{
+
+.button {
   padding: 16px 32px;
   border-radius: 10px !important;
-  background:  #FFC436 !important;
+  background: #FFC436 !important;
   border-color: #FFC436;
   color: white !important;
   font-family: 'Montserrat-Arabic', sans-serif !important;
@@ -473,14 +562,16 @@ a {
   box-shadow: none !important;
   position: absolute;
   left: 0;
-  
-  
-} 
-.card{
+
+
+}
+
+.card {
   box-sizing: border-box !important;
   width: 100%;
   background: #F9F9F9;
 }
+
 @media (max-width: 850px) {
   .project-design .main-content .container3 {
     margin-top: auto;
@@ -488,7 +579,8 @@ a {
   }
 
 }
-.tr{
+
+.tr {
   background: rgba(161, 194, 241, 0.25) !important;
 }
 

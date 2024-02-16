@@ -1,0 +1,47 @@
+@import url("./SHARED.css");
+*{
+    /* font-family: "Noto Naskh Arabic", serif; */
+  
+}
+#homework button{
+    font-size: var( --font-s-16);
+    font-weight: var( --font-s-16);
+    font-family: var(--font-f);
+    color: var(--font-c);
+}
+#homework i {
+ padding-right: 5px; 
+}
+#homework .card h5 {
+    font-size: var(--font-s-18);
+    color: var(--font-c);
+    font-weight: var(--font-w-6);
+    font-family: var(--font-f);
+}
+#homework .card p {
+    font-size: var(--font-s-14);
+    font-family: var(--font-f);
+    font-weight: var(--font-w-4);
+    color: #94A3B8;
+}
+#homework button {
+    display: flex;
+    align-items: center; 
+}
+.page {
+    background-color: #e7e6e6; 
+    min-height: 100vh;
+}
+.project-design .main-content {
+    height: auto;
+    background-color: #FEFEFE;
+}
+.rectangle{
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: #e7e6e6;
+    box-shadow: 1px 1px 3px 0px #0000001b;
+    overflow-x: hidden;
+}
