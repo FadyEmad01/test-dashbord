@@ -12,6 +12,16 @@
 #homework i {
  padding-right: 5px; 
 }
+#homework .mydropdown {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(15.7143px, 37.8571px, 0px); */
+}
 #homework .card h5 {
     font-size: var(--font-s-18);
     color: var(--font-c);

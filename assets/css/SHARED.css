@@ -1,11 +1,14 @@
 /* font size/weight and color only */
 :root {
+    --bg-main:#F9F9F9;
+    --bg-card:#FFFFFF;
     --font-c: #073051;
     --font-s-12: 12px;
     --font-s-18: 18px;
     --font-s-25: 25px;
     --font-s-22: 22px;
     --font-s-16: 16px;
+    --font-s-32: 32px;
     --font-s-14: 14px;
     --font-s-11: 11px;
     --font-w-7: 700;

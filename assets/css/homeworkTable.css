@@ -1,0 +1,24 @@
+#Homework-table .rectangle{
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    box-shadow: 1px 1px 3px 0px #0000001b;
+    overflow-x: hidden;
+}
+#Homework-table .table-1{
+    border: none; /* Remove default table border */
+    border-radius: 0px; /* Apply border radius */
+    overflow: hidden; /* Hide any overflow content */
+}
+#Homework-table .table-1 th {
+    border: none; /* Remove borders for table cells */
+}
+#Homework-table table{
+    font-family: var(--font-f);
+}
+.tabel-contaner {
+    overflow-y: auto; 
+    max-height: 370px;
+  }

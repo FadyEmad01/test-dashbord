@@ -1,17 +1,55 @@
-.page {
+:root {
+    --font-c: #073051;
+    --font-s-12: 12px;
+    --font-s-18: 18px;
+    --font-s-25: 25px;
+    --font-s-22: 22px;
+    --font-s-16: 16px;
+    --font-s-14: 14px;
+    --font-s-11: 11px;
+    --font-w-7: 700;
+    --font-w-4: 400;
+    --font-w-5: 500;
+    --font-w-6: 600;
+    /* weight 600 is bold in Montserrat family*/
+    --font-f: 'Noto Naskh Arabic', serif;
+}
+*{
+    font-family: var(--font-f);
+}
+/* .page {
     background-color: #e7e6e6; 
     min-height: 100vh;
-}
-.project-design .main-content {
+} */
+/* .project-design .main-content {
     height: auto;
     background-color: #FEFEFE;
-}
-.rectangle{
+} */
+#Attendnce .rectangle{
     border: none;
     width: 100%;
     height: auto;
     border-radius: 15px;
-    background-color: #e7e6e6;
+    background-color: var(--bg-card);
     box-shadow: 1px 1px 3px 0px #0000001b;
     overflow-x: hidden;
+}
+#Attendnce .content h1{
+    font-size: var(--font-s-22);
+    font-weight: var(--font-w-7);
+    color:  var(--font-c);
+}
+#Attendnce .content p{
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-5);
+    color:  #909090;
+
+}
+#Attendnce .content_container {
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    transition: 0.4s;
+}
+#Attendnce .content_container:hover{
+    background-color: #E7F0FB;
 }

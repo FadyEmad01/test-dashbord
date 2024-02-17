@@ -1,0 +1,85 @@
+body {
+  overflow-x: hidden;
+}
+
+#Projects .swiper-slide img {
+  border-radius: 20px;
+}
+
+#Projects .swiper-slide {
+  /* filter: blur(2px); */
+  opacity: 0.6;
+}
+
+#Projects .swiper-slide-active {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+#Projects .swiper-slide:hover {
+  cursor: grab;
+}
+
+#Projects .swiper-slide:active {
+  cursor: grabbing;
+}
+
+#Projects .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#Projects .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#Projects .content_container {
+  background: linear-gradient(122deg, rgba(249, 123, 188, 0.2) 42.75%, rgba(205, 146, 214, 0.2) 49.7%, rgba(134, 160, 243, 0.2) 58.3%, rgba(185, 208, 247, 0.2) 70.27%, rgba(217, 239, 247, 0.2) 81.46%);
+  border-radius: 15px;
+}
+
+#Projects .rectangle-1 h1 {
+  font-family: var(--font-f);
+  color: var(--font-c);
+  font-weight: var(--font-w-7);
+  font-size: var(--font-s-32);
+}
+#Projects .rectangle-1 p {
+  font-family: var(--font-f);
+  color: var(--font-c);
+  font-weight: var(--font-w-4);
+  font-size: var(--font-s-16);
+}
+#Projects .rectangle{
+  border: none;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background-color: var(--bg-card);
+  box-shadow: 1px 1px 3px 0px #0000001b;
+  overflow-x: hidden;
+}
+#Projects button {
+  display: flex;
+  align-items: center; 
+}
+#Projects .myCard{
+  background-image:  url("../../assets/images/Union.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}

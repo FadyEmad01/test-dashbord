@@ -1,8 +1,9 @@
 #cards .card,
 #cards .card-body {
     border-radius: 15px;
+   background-color: var(--bg-card);
 }
-
+    
 #cards .card-body-pink {
     background-color: #F6D9E1;
 }

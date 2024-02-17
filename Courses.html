@@ -19,6 +19,9 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
    <!-- end font  -->
+   <!-- swiper -->
+   <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css" />
+   <!-- end swiper -->
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/course.css">
     <link rel="stylesheet" href="assets/css/SHARED.css">
@@ -52,13 +55,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="tables.html">
+                    <a href="homeworkTable.html">
                         <i class="fa-regular fa-calendar"></i>
                         <span>الجداول</span>
                     </a>
                 </li>
                 <li class="lecture">
-                    <a href="lectures.html">
+                    <a href="Lectures.html">
                         <i class="fa-solid fa-tv"></i>
                         <div>
                             <span>المحاضرات</span> <i class="fa-solid fa-angle-down"></i>
@@ -94,7 +97,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="projects.html">
+                    <a href="Projects.html">
                         <i class="fa-solid fa-gear"></i>
                         <span>الإعدادات</span>
                     </a>
@@ -132,7 +135,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
-                                    <div class="accordion-item my-5" style="border: none;">
+                                    <div class="accordion-item mt-5" style="border: none;">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button" style="border-radius: 15px;" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
@@ -143,7 +146,7 @@
                                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                                             <div class="accordion-body">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card purple">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -164,7 +167,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card mint">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -185,7 +188,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightOrange">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -206,7 +209,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightBlue">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -227,7 +230,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightPink">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -248,7 +251,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightYellow">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -269,7 +272,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightPurple">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -294,7 +297,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item my-5" style="border: none;">
+                                    <div class="accordion-item my-3" style="border: none;">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" style="border-radius: 15px;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                                 الفصل الثاني
@@ -303,7 +306,7 @@
                                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse ">
                                             <div class="accordion-body">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightPink">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -324,7 +327,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightYellow">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -345,7 +348,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightPurple">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -366,7 +369,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightOrange">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -391,7 +394,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item my-5" style="border: none;">
+                                    <div class="accordion-item my-3" style="border: none;">
                                         <h2 class="accordion-header">
                                             <button  class="accordion-button collapsed" style="border-radius: 15px;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
                                                 الفصل الاول
@@ -400,7 +403,7 @@
                                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse ">
                                             <div class="accordion-body">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightPink">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -421,7 +424,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightYellow">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -442,7 +445,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightPurple">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -463,7 +466,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mx-auto mt-4 mb-5">
+                                                    <div class="col-lg-3 col-md-6 col-12  mt-4 mb-5">
                                                         <div class="card lightOrange">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">الفيزياء- ART101</h5><i
@@ -500,6 +503,7 @@
     <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendors/echarts/echarts.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

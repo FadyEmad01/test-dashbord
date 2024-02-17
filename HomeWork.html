@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
     <!-- end font  -->
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css" />
+    <!-- end swiper -->
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/homework.css">
     <link rel="stylesheet" href="assets/css/SHARED.css">
@@ -51,13 +54,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="tables.html">
+                    <a href="homeworkTable.html">
                         <i class="fa-regular fa-calendar"></i>
                         <span>الجداول</span>
                     </a>
                 </li>
                 <li class="lecture">
-                    <a href="lectures.html">
+                    <a href="Lectures.html">
                         <i class="fa-solid fa-tv"></i>
                         <div>
                             <span>المحاضرات</span> <i class="fa-solid fa-angle-down"></i>
@@ -87,7 +90,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="projects.html">
+                    <a href="Projects.html">
                         <i class="fa-solid fa-people-group"></i>
                         <span>المشاريع</span>
                     </a>
@@ -140,7 +143,7 @@
                         <div class="container">
                             <div class="row mt-5">
                                 <div class="col-lg-4 col-md-6 col-12 mx-auto">
-                                    <div class="card my-3">
+                                    <div class="card my-3" style="border: none;">
                                         <div class="card-body">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div>
@@ -148,7 +151,13 @@
                                                             style="color: #38B124; font-size: 10px;"></i>الواجبات
                                                         السابقة</h5>
                                                 </div>
-                                                <div><i class="fa-solid fa-plus"></i></div>
+                                                <div>
+                                                    <i class="fa-solid fa-plus" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                    <ul class="dropdown-menu dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen ms-2"></i>تعديل</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash ms-2"></i>حذف</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <h6 class="card-subtitle mb-2 text-body-secondary">
                                                 <hr style="color: #38B124; border: #38B124 solid 1.2px; opacity: 1;">
@@ -161,7 +170,7 @@
                                                             <li><a class="dropdown-item" href="#">Action</a></li>
                                                             <li><a class="dropdown-item" href="#">Another action</a></li>
                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                          </ul>
+                                                        </ul>
                                                     </div>
                                                     <h5 class="card-title">الواجب الاول : الخطاب الخارجي</h5>
                                                     <p class="card-text">المحاضره الاولي</p>
@@ -247,7 +256,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12 mx-auto">
-                                    <div class="card my-3">
+                                    <div class="card my-3" style="border: none;">
                                         <div class="card-body">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div>
@@ -255,7 +264,13 @@
                                                             style="color: #FFC436; font-size: 10px;"></i>الواجبات
                                                         السابقة</h5>
                                                 </div>
-                                                <div><i class="fa-solid fa-plus"></i></div>
+                                                <div>
+                                                    <i class="fa-solid fa-plus" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                    <ul class="dropdown-menu dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen ms-2"></i>تعديل</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash ms-2"></i>حذف</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <h6 class="card-subtitle mb-2 text-body-secondary">
                                                 <hr style="color: #FFC436; border: #FFC436 solid 1.2px; opacity: 1;">
@@ -354,7 +369,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12 mx-auto">
-                                    <div class="card my-3">
+                                    <div class="card my-3" style="border: none;">
                                         <div class="card-body">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div>
@@ -362,7 +377,14 @@
                                                             style="color: #108DEE; font-size: 10px;"></i>الواجبات
                                                         السابقة</h5>
                                                 </div>
-                                                <div><i class="fa-solid fa-plus"></i></div>
+                                                <div>
+                                                    <i class="fa-solid fa-plus" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                    <ul class="dropdown-menu dropdown-menu mydropdown">
+                                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus ms-2"></i>اضافة الي الحالية</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen ms-2"></i>تعديل</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash ms-2"></i>حذف</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <h6 class="card-subtitle mb-2 text-body-secondary">
                                                 <hr style="color: #108DEE; border: #108DEE solid 1.2px; opacity: 1;">
@@ -472,6 +494,7 @@
     <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendors/echarts/echarts.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

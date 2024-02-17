@@ -131,7 +131,8 @@ a {
 
 .page {
   display: flex;
-  background-color: #e7e6e6;
+  /* background-color: #e7e6e6; */
+  background-color: var(--bg-main);
 
 }
 
@@ -279,7 +280,8 @@ a {
 
 .header .info {
   position: fixed;
-  background-color: #e7e6e6;
+  /* background-color: #e7e6e6; */
+  background-color: #F9F9F9;
   width: 100%;
   padding: 10px;
 }
@@ -380,7 +382,8 @@ a {
   margin-top: 100px;
   /* height: 500px; */
   border: none;
-  background-color: #FEFEFE;
+  /* background-color: #FEFEFE; */
+  background-color: var(--bg-main);
 }
 
 @media (max-width: 850px) {
@@ -403,6 +406,10 @@ a {
 
 }
 
+.container{
+  width: 95%;
+  margin: auto;
+}
 .oval-shape {
   width: 71%;
   height: 80%;
@@ -569,7 +576,7 @@ a {
 .card {
   box-sizing: border-box !important;
   width: 100%;
-  background: #F9F9F9;
+
 }
 
 @media (max-width: 850px) {
