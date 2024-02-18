@@ -1,0 +1,47 @@
+#myAccordion-settings .rectangle {
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    box-shadow: 1px 1px 3px 0px #0000001b;
+    overflow-x: hidden;
+}
+
+.accordion-button::after {
+    margin-left: 0;
+}
+
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 0;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: calc(var(--bs-border-width) * -1);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 0;
+    border-color: #DEE2E6;
+}
+
+#myAccordion-settings .save-btn {
+    font-size: var(--font-s-20);
+    font-weight: var(--font-w-6);
+}
+
+#myAccordion-settings .accordion-header button{
+    color: var(--font-c);
+    font-size: var(--font-s-22);
+    font-weight: var(--font-w-6);
+}
+#myAccordion-settings .form-label{
+    color: var(--font-c);
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-5);
+}

@@ -153,10 +153,10 @@ var swiper = new Swiper("#Projects .swiper", {
     // },
   },
   grabCursor: true,
-  // autoplay: {
-  //   delay: 3000,
-  // },
-  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+  },
+  centeredSlides: false,
   loop: true,
   spaceBetween: 0,
   slidesPerView: 1,
@@ -169,3 +169,126 @@ var swiper = new Swiper("#Projects .swiper", {
     slideShadows: false,
   },
 });
+// ===== Swipers =====
+var swiper = new Swiper("#cards .swiper", {
+  // slidesPerView: 3,
+  // spaceBetween: 10,
+  // effect: "coverflow",
+  // loop: true,
+  // centeredSlides: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  effect: "coverflow",
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   dynamicBullets: true,
+    // type: 'progressbar',
+    // type: 'fraction',
+    // clickable: true,
+    // renderBullet: function (index, className) {
+    //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+    // },
+  // },
+  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+  },
+  centeredSlides: false,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 4,
+  reverseDirection: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 0,
+    modifier: 0,
+    slideShadows: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      loop: true,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    720: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// const inputElement = document.querySelector('.filepond');
+// FilePond.create(inputElement);
+// FilePond.create(inputElement, {
+//   allowMultiple: true,
+//   maxFiles: 3,
+  
+
+// });
+// FilePond.registerPlugin(
+//   FilePondPluginImagePreview,
+//   FilePondPluginImageExifOrientation,
+//   FilePondPluginFileValidateSize,
+//   FilePondPluginImageEdit
+// );
+// const pond = FilePond.create(inputElement);
+
+// pond.on('addfile', (error, file) => {
+//     if (!error) {
+//         console.log('File added:', file);
+//     }
+// });
+
+ // Register FilePond plugins
+ FilePond.registerPlugin(
+  FilePondPluginImagePreview,
+  FilePondPluginImageExifOrientation,
+  FilePondPluginFileValidateSize,
+  FilePondPluginImageEdit
+);
+
+// Create a FilePond instance
+const inputElement = document.querySelectorAll('.filepond');
+const pond = FilePond.create(inputElement[0]);
+const pond1 = FilePond.create(inputElement[1]);
+
+// Listen for addfile event
+pond.on('addfile', (error, file) => {
+  if (!error) {
+      console.log('File added:', file);
+  } else {
+      console.error('Error adding file:', error);
+  }
+});
+pond1.on('addfile', (error, file) => {
+  if (!error) {
+      console.log('File added:', file);
+  } else {
+      console.error('Error adding file:', error);
+  }
+});
+
+
+function togglePasswordVisibility(index) {
+  var passwordInput = document.getElementsByClassName('password-input');
+  var eyeIcon = document.querySelectorAll('.toggle-eye');
+
+  if (passwordInput[index].type === 'password') {
+      passwordInput[index].type = 'text';
+      eyeIcon[index].classList.remove('fa-eye-slash');
+      eyeIcon[index].classList.add('fa-eye');
+  } else {
+      passwordInput[index].type = 'password';
+      eyeIcon[index].classList.remove('fa-eye');
+      eyeIcon[index].classList.add('fa-eye-slash');
+  }
+}
+
+

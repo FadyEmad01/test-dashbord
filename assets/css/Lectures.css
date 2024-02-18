@@ -1,0 +1,31 @@
+#Lectures .dropdown-menu .dropdown-item:hover{
+    background-color: #E7F0FB;
+}
+#Lectures .rectangle{
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    box-shadow: 1px 1px 3px 0px #0000001b;
+    overflow-x: hidden;
+}
+#Lectures .content h1{
+    font-size: var(--font-s-22);
+    font-weight: var(--font-w-7);
+    color:  var(--font-c);
+}
+#Lectures .content p{
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-5);
+    color:  #909090;
+
+}
+#Lectures .content_container {
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    transition: 0.4s;
+}
+#Lectures .content_container:hover{
+    background-color: #E7F0FB;
+}

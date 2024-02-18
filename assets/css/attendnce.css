@@ -53,3 +53,7 @@
 #Attendnce .content_container:hover{
     background-color: #E7F0FB;
 }
+#Attendnce button {
+    display: flex;
+    align-items: center; 
+}
