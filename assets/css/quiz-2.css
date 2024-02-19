@@ -1,4 +1,4 @@
-#Quizs .rectangle{
+#Quizs-2 .rectangle{
     border: none;
     width: 100%;
     height: auto;
@@ -7,13 +7,20 @@
     box-shadow: 1px 1px 3px 0px #0000001b;
     overflow-x: hidden;
 }
-#Quizs .form-check-input{
+#Quizs-2 .content_container {
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    transition: 0.4s;
+}
+#Quizs-2 .form-check-input{
   border: 2px #148AE7 solid;
 }
-#Quizs .card{
-    background-color: #2222220D;
+#Quizs-2 .card{
+    background-color: var(--bg-card);
+    border: 0;
+    border-radius: 15px;
 }
-#Quizs .rectangle-quiz{
+#Quizs-2 .rectangle-quiz{
     border: none;
     width: 100%;
     height: auto;

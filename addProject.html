@@ -28,7 +28,7 @@
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
         rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/AddLectues.css">
+    <link rel="stylesheet" href="assets/css/addProject.css">
     <link rel="stylesheet" href="assets/css/SHARED.css">
     <title>Document</title>
 </head>
@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <li class="lecture">
-                    <a href="Lectures.html" class="active">
+                    <a href="Lectures.html">
                         <i class="fa-solid fa-tv"></i>
                         <div>
                             <span>المحاضرات</span> <i class="fa-solid fa-angle-down"></i>
@@ -97,7 +97,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Projects.html">
+                    <a href="Projects.html" class="active">
                         <i class="fa-solid fa-people-group"></i>
                         <span>المشاريع</span>
                     </a>
@@ -137,11 +137,11 @@
             <!-- end nav and aside -->
             <div class=" pt-1 main-content card">
                 <main>
-                    <section id="AddLectures">
+                    <section id="AddProject">
                         <div class="container ">
                             <div class="row">
                                 <div class="form-card mt-3 pb-3">
-                                    <h4 class="py-4">معلومات اساسية</h4>
+                                    <h4 class="py-4">اضافة مشروع</h4>
                                     <form class="row g-3">
                                         <div class="col-12">
                                             <label for="inputName" class="form-label">العنوان الرئيسي<span
@@ -217,6 +217,69 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea2"
                                                 rows="3"></textarea>
                                         </div>
+                                        <hr class="my-5">
+                                        <div class="col-8">
+                                            <div class="row mb-3">
+                                                <div class="col-3">
+                                                    <label for="inputDate" class=" col-form-label">تاريخ بداية
+                                                        العرض:</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="time" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <p class="text-center" style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="row mb-3">
+                                                <div class="col-3">
+                                                    <label for="inputDate" class=" col-form-label">تاريخ انتهاء العرض:</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="time" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <p class="text-center" style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="row mb-3">
+                                                <div class="col-3">
+                                                    <label for="inputDate" class=" col-form-label">تاريخ الاستحقاق<span
+                                                        style="color: #E63329;">*</span>:</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="time" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <p class="text-center" style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
+                                            </div>
+                                        </div>
+                                        <hr class="my-5" >
+                                        <div class="col-5">
+                                            <label for="inputdeg" style="font-size: 25px; font-weight: 700; color: #073051;" class="form-label">التقديرات</label>
+                                            <div class="row my-3">
+                                                <label for="inputdeg" class="col-sm-2 col-form-label">الدرجة<span
+                                                    style="color: #E63329;">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" id="inputdeg">
+                                                </div>
+                                              </div>
+                                            
+                                        </div>
                                         <div class="col-12 mt-5">
                                             <div class="d-flex justify-content-end align-items-center">
 
@@ -229,7 +292,7 @@
             
             
                                                 <div>
-                                                    <a href="./AddLectures.html" class="btn btn-warning text-light m-2 py-2 px-4 "
+                                                    <a href="./AddLectures.html" class="btn btn-warning text-light m-2 py-2 px-4"
                                                         style="border-radius: 14px;">حفظ <i
                                                             class="fa-solid fa-plus me-2"></i></a>
                                                 </div>

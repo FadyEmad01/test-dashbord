@@ -1,0 +1,42 @@
+#AddProject .form-card{
+    background-color: var(--bg-card);
+    border-radius: 15px;
+}
+#AddProject .form-card h4{
+    font-size: var(--font-s-32);
+    font-weight: var(--font-w-7);
+    color: var(--font-c);
+}
+#AddProject .form-card label{
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-5);
+    color: var(--font-c);
+}
+
+/* .filepond--root {
+    max-height: 10em;
+} */
+
+.filepond--drop-label {
+	color: #4c4e53;
+}
+
+.filepond--label-action {
+	text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+	border-radius: 2em;
+	background-color: #edf0f4;
+	height: 1em;
+}
+
+.filepond--item-panel {
+	background-color: #595e68;
+}
+
+.filepond--drip-blob {
+	background-color: #7f8a9a;
+}
+
+  
