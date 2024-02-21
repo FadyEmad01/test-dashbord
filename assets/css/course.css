@@ -38,7 +38,7 @@
     background-color: #EBEAFF;
 }
 #myAccordion .accordion-button {
-    background-color: #EEEEEE;
+    background-color: #ffffff;
 }
 .page {
     /* background-color: #e7e6e6;  */
@@ -50,4 +50,93 @@
   }
   .accordion-button::after {
     margin-left: 0;
+}
+#myAccordion .rectangle{
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--bg-main);
+    box-shadow: 6px 6px 10px 1px #0000000D;
+    overflow-x: hidden;
+}
+#myAccordion .accordion-header ,.accordion-body{
+    border-radius: 20px;
+}
+#myAccordion .accordion-item:last-of-type .accordion-collapse {
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius: 20px
+}
+#myAccordion .accordion-item {
+    color: var(--bs-accordion-color);
+ 
+    border: 0
+}
+#myAccordion .accordion-button:focus {
+    z-index: 3;
+    background-color: #E7F0FB;
+   
+}
+#myAccordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+#myAccordion .accordion-button:active,
+#myAccordion .accordion-button:hover,
+
+#myAccordion .accordion-button[aria-expanded="true"]  {
+  background-color: #E7F0FB !important;
+  color: #0F5891;
+}
+
+
+#myAccordion .accordion-item:first-of-type {
+    border-radius: 20px;
+    
+}
+#myAccordion .accordion-item {
+    border-radius: 20px;
+    
+}
+
+#myAccordion .accordion-item:first-of-type .accordion-button {
+    border-radius: 20px;
+   
+} 
+
+#myAccordion .accordion-item:not(:first-of-type) {
+    border-top: 0
+}
+
+#myAccordion .accordion-item:last-of-type {
+    border-radius: 20px;
+  
+}
+
+#myAccordion .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 20px;
+ 
+}
+
+#myAccordion .accordion-item:last-of-type .accordion-collapse {
+    border-radius: 20px;
+   
+}
+#myAccordion .accordion-flush .accordion-item .accordion-button,
+#myAccordion .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 20px
+}
+#myAccordion .accordion-flush .accordion-item {
+    
+    border-radius: 20px
+}
+
+#myAccordion .accordion-header button{
+    color: #073051;
+}
+#myAccordion .card:hover, .card:checked{
+    transform: scale(1.05) !important;
+}
+#myAccordion .card{
+transition: 0.4s;
 }

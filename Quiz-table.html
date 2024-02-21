@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css" />
     <!-- end swiper -->
     <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/homeworkTable.css">
+    <link rel="stylesheet" href="assets/css/Quiz-table.css">
     <link rel="stylesheet" href="assets/css/SHARED.css">
     <title>Document</title>
 </head>
@@ -66,7 +66,7 @@
                         </div>
                     </a>
                     <div>
-                        <a href="lecturesTable.html" >
+                        <a href="lecturesTable.html">
                             <i class="fa-solid fa-calendar-days ps-2"></i>
                             <span>جدول المحاضرات</span>
                         </a>
@@ -131,234 +131,216 @@
             <!-- end nav and aside -->
             <div class=" pt-1 main-content card">
                 <main>
-                    <section id="Homework-table">
-                        <div class="container mb-2">
-                            <div class="rectangle my-3 rectangle-padding">
+                    <section id="Quiz-table">
+                        <div class="container mb-5">
+                            <div class="rectangle my-3">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div>
                                         <button class="btn btn-light m-2 "
-                                            style="border-radius: 14px ;color: #94A3B8; background-color: #ffffff;">الواجبات
+                                            style="border-radius: 14px ;color: #94A3B8;">الاختبار الفصلي الاول
                                         </button>
                                         <div class="btn m-2"
                                             style="border-radius: 14px; background-color: #FFF3D7; color: #FFB800;">
-                                            المراجعة
-                                        </div>
+                                            الاختبارات </div>
+                                    </div>
+                                    <div>
+                                        <a href=""><button class="btn btn-warning m-2 me-4 text-light"
+                                                style="border-radius: 14px;"> اضافة اختبار <i
+                                                    class="fa-solid fa-plus"></i></button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
-                            <table class="table table-1 table-bordered">
-                                <!-- <thead>
-                                    <tr>
-                                        <th scope="col">اسم الطالب</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead> -->
-                                <tbody>
-                                    <tr style="border: none;">
-                                        <th scope="row"
-                                            style="border-right: none; width: 15%;font-weight: 400; font-family: 'Noto Naskh Arabic', serif; color: rgba(34, 34, 34, 0.50); padding-top: 2%; padding-right: 3%;">
-                                            الواجب</th>
-                                        <td colspan="2"
-                                            style=" border-left: none;font-family: 'Noto Naskh Arabic', serif; color: rgba(34, 34, 34, 0.50); padding-top: 2%;">
-                                            1) كيف يمكنك إنشاء بيان الزيادة أو بيان النقصان في لغة C؟</td>
-                                    </tr>
-                                    <tr style="border-bottom: none;">
-                                        <th scope="row"
-                                            style="font-weight: 400; font-family: 'Noto Naskh Arabic', serif; color: rgba(34, 34, 34, 0.50); padding-top: 5%; padding-right: 3%;">
-                                            الاجابه</th>
-                                        <td colspan="2"
-                                            style=" border-left: none;font-family: 'Noto Naskh Arabic', serif; color: rgba(34, 34, 34, 0.50); padding-top: 2%;">
-                                            هناك طريقتان القيام الاولي هو استخدام عامل الزيادة ++وعامل التناقص –. على
-                                            سبيل المثال، العبارة "x++" تعني زيادة قيمة x بمقدار 1. وبالمثل، العبارة "x
-                                            -" تعني تقليل قيمة x بمقدار ١.الثانيه وهي استخدام علامة + + التقليدية أو -
-                                            علامة الطرح. في حالة "x++"،
-                                            هناك طريقة أخرى لكتابتها وهي "x = x +1".</td>
 
-                                    </tr>
 
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="container mt-2 mb-3">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <div class="btn m-2"
-                                        style="border-radius: 14px; background-color: #FFF3D7; color: #FFB800;">
-                                        المراجعة
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
 
                         <div class="container mb-4">
                             <div class="tabel-contaner">
-                                <table class="table table-2 caption-top align-middle table-hover" style="width: 90%;">
+                                <table class="table table-2 caption-top align-middle table-hover text-center" style="width: 90%;">
                                     <thead>
                                         <tr style="background: rgba(161, 194, 241, 0.25);">
                                             <th scope="1"
                                                 style="color:#073051;  background: var(--hover2, rgba(161, 194, 241, 0.25));">
-                                                #</th>
+                                                اسم المادة</th>
                                             <th scope="1"
                                                 style="color:#073051;  background: var(--hover2, rgba(161, 194, 241, 0.25));">
-                                                اسم الطالب</th>
+                                                كود المادة</th>
                                             <th scope="1"
                                                 style="color:#073051;  background: var(--hover2, rgba(161, 194, 241, 0.25));">
-                                                كود الطالب</th>
+                                                موعد الاختبار</th>
                                             <th scope="1"
                                                 style="color:#073051;  background: var(--hover2, rgba(161, 194, 241, 0.25));">
-                                                تاريخ تقديم الاجابة</th>
-                                            <th scope="1" colspan="2"
+                                                عدد الاسأله</th>
+                                            <th scope="1"
                                                 style="color:#073051;  background: var(--hover2, rgba(161, 194, 241, 0.25));">
-                                                الدرجة</th>
+                                                مدة الاختبار</th>
+                                            <th scope="1"
+                                                style="color:#073051;  background: var(--hover2, rgba(161, 194, 241, 0.25));">
+                                                الدرجة النهائية</th>
+                                            <th scope="1"
+                                                style="color:#073051;  background: var(--hover2, rgba(161, 194, 241, 0.25));">
+                                                حالة ااختبار</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <!-- <th scope="row">1</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                            <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
                                                 ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 finsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <!-- <th scope="row">2</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                            <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
-                                                ١٠\١٠
+                                                ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 Notfinsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <!-- <th scope="row">3</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                            <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
-                                                .........
+                                                ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 finsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <!-- <th scope="row">1</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                            <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
                                                 ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 finsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <!-- <th scope="row">1</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                           <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
                                                 ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 finsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <!-- <th scope="row">1</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                           <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
                                                 ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 finsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <!-- <th scope="row">1</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                           <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
                                                 ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 finsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <!-- <th scope="row">1</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                           <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
                                                 ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 finsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <!-- <th scope="row">1</th> -->
-                                            <th scope="row" style="color:#073051; ">1</th>
-                                            <td style="color: #6C757D; ">محمد احمد يوسف</td>
-                                            <td style="color: #6C757D; ">٦٢٣٥٦٥٧٨٨٧٧</td>
-                                            <td style="color: #6C757D;">رجب ٢٥/١٤٤٢</td>
+                                           <th scope="row" style="color:#073051; ">الفيزياء</th>
+                                            <td style="color: #6C757D; ">٣٤٦</td>
+                                            <td style="color: #6C757D; ">2023-12-06
+                                               <br> 12:00 مساء</td>
+                                            <td style="color: #6C757D;">٢٠</td>
                                             <td>
                                                 ١٠
                                             </td>
+                                            <td>٤٠ دقيقة</td>
                                             <td>
-                                                <div class="btn m-2"
-                                                    style="border-radius: 14px; background-color: rgba(161, 194, 241, 0.25); color: rgba(15, 88, 145, 1);">
+                                                <div class="btn m-2 finsh"
+                                                    style="border-radius: 10px;">
                                                     المراجعة
                                                 </div>
                                             </td>

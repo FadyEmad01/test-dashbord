@@ -36,3 +36,18 @@
     font-weight: var(--font-w-4);
     color: var(--font-c);
 }
+
+.rectangle{
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--bg-main);
+    box-shadow: 6px 6px 10px 1px #0000000D;
+    overflow-x: hidden;
+    
+}
+.rectangle-padding{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}

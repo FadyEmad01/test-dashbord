@@ -63,7 +63,7 @@ body {
   font-weight: var(--font-w-4);
   font-size: var(--font-s-16);
 }
-#Projects .rectangle{
+/* #Projects .rectangle{
   border: none;
   width: 100%;
   height: auto;
@@ -71,7 +71,7 @@ body {
   background-color: var(--bg-card);
   box-shadow: 1px 1px 3px 0px #0000001b;
   overflow-x: hidden;
-}
+} */
 #Projects button {
   display: flex;
   align-items: center; 

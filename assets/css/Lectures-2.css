@@ -1,0 +1,95 @@
+body {
+    overflow-x: hidden;
+}
+
+.main-content {
+    background-color: var(--bg-card) !important;
+}
+
+
+#Lectures-2 .content_container {
+    border-radius: 15px;
+    background: linear-gradient(134.23deg, #84BCE7 27.93%, #A7CDEA 38.91%, #D9EFF7 66.94%);
+
+}
+#Lectures-2 .rectangle-1 img{
+    width: 200px;
+}
+#Lectures-2 .rectangle-1 h1 {
+    font-family: var(--font-f);
+    color: var(--font-c);
+    font-weight: var(--font-w-7);
+    font-size: var(--font-s-32);
+}
+
+#Lectures-2 .rectangle-1 p {
+    font-family: var(--font-f);
+    color: rgb(34, 34, 34, 0.5);
+    font-weight: var(--font-w-6);
+    font-size: var(--font-s-20);
+}
+
+#Lectures-2 .rectangle {
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    box-shadow: 1px 1px 3px 0px #0000001b;
+    overflow-x: hidden;
+}
+
+#Lectures-2 button {
+    display: flex;
+    align-items: center;
+}
+
+#Lectures-2 .card {
+    background-color: #FBFBFB;
+    border: none;
+    border-radius: 20px;
+}
+
+#Lectures-2 .card-title {
+    color: var(--font-c);
+    font-size: var(--font-s-22);
+    font-weight: var(--font-w-6);
+}
+
+#Lectures-2 .card-text {
+    color: #22222280;
+    font-size: var(--font-s-20);
+    font-weight: var(--font-w-4);
+}
+
+#Lectures-2 .card .dates {
+    font-size: var(--font-s-22);
+    font-weight: var(--font-w-6);
+    color: var(--font-c);
+}
+#Lectures-2 .card .clock {
+    color: #22222280;
+}
+#Lectures-2 .card .card-subtitle {
+    color: #22222280;
+    font-size: var(--font-s-20);
+    font-weight: var(--font-w-4);
+}
+@media (max-width: 768px) {
+    #Lectures-2 .rectangle-1 h1 {
+        font-family: var(--font-f);
+        color: var(--font-c);
+        font-weight: var(--font-w-7);
+        font-size: var(--font-s-22);
+    }
+    #Lectures-2 .rectangle-1 p {
+        font-family: var(--font-f);
+        color: rgb(34, 34, 34, 0.5);
+        font-weight: var(--font-w-6);
+        font-size: var(--font-s-16);
+    }
+    #Lectures-2 .rectangle-1 img{
+        width: 100px;
+    }
+    
+}

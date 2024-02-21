@@ -4,9 +4,12 @@ body{
 #cards .card,
 #cards .card-body {
     border-radius: 15px;
-   background-color: var(--bg-card);
+   background-color: var(--bg-main);
 }
-    
+.bg {
+    background-color: var(--bg-card);
+    border-radius: 15px;
+} 
 #cards .card-body-pink {
     background-color: #F6D9E1;
 }

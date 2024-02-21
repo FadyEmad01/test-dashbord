@@ -169,6 +169,44 @@ var swiper = new Swiper("#Projects .swiper", {
     slideShadows: false,
   },
 });
+var swiper = new Swiper("#Quiz-3 .swiper", {
+  // slidesPerView: 3,
+  // spaceBetween: 10,
+  // effect: "coverflow",
+  // loop: true,
+  // centeredSlides: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  effect: "coverflow",
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    // type: 'progressbar',
+    // type: 'fraction',
+    // clickable: true,
+    // renderBullet: function (index, className) {
+    //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+    // },
+  },
+  grabCursor: true,
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  centeredSlides: false,
+  loop: true,
+  spaceBetween: 0,
+  slidesPerView: 1,
+  reverseDirection: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 0,
+    modifier: 0,
+    slideShadows: false,
+  },
+});
 // ===== Swipers =====
 var swiper = new Swiper("#cards .swiper", {
   // slidesPerView: 3,

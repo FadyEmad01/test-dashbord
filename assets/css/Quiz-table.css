@@ -1,4 +1,4 @@
-/* #Homework-table .rectangle{
+#Quiz-table .rectangle{
     border: none;
     width: 100%;
     height: auto;
@@ -6,17 +6,25 @@
     background-color: var(--bg-card);
     box-shadow: 1px 1px 3px 0px #0000001b;
     overflow-x: hidden;
-} */
-#Homework-table .table-1{
+}
+#Quiz-table .table-1{
     border: none; /* Remove default table border */
     border-radius: 0px; /* Apply border radius */
     overflow: hidden; /* Hide any overflow content */
 }
-#Homework-table .table-1 th {
+#Quiz-table .table-1 th {
     border: none; /* Remove borders for table cells */
 }
-#Homework-table table{
+#Quiz-table table{
     font-family: var(--font-f);
+}
+#Quiz-table .finsh{
+    background-color: #DCEFD9;
+    color: #2D861E;
+}
+#Quiz-table .Notfinsh{
+    background-color: #FAF1DC;
+    color: #E1AE31;
 }
 .tabel-contaner {
     overflow-y: auto; 

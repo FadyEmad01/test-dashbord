@@ -4,13 +4,53 @@
   
 }
 #homework button{
-    font-size: var( --font-s-16);
+    font-size: var( --font-s-20);
     font-weight: var( --font-s-16);
     font-family: var(--font-f);
     color: var(--font-c);
 }
 #homework i {
  padding-right: 5px; 
+}
+#homework .Previous-color{
+    color: #38B124;
+}
+#homework .Previous-bg-color{
+    background-color: #38B124;
+}
+#homework .Previous-border{
+    border: #38B124 solid 1.2px; opacity: 1;
+}
+#homework .Previous-btn{
+    color: #38B124;
+    background-color: #D7EFD3;
+}
+#homework .Present-color{
+    color: #FFC436;
+}
+#homework .Present-bg-color{
+    background-color: #FFC436;
+}
+#homework .Present-border{
+    border: #FFC436 solid 1.2px; opacity: 1;
+}
+#homework .Present-btn{
+    color: #FFC436;
+    background-color: #FFF3D7;
+}
+/*  */
+#homework .Next-color{
+    color: #108DEE;
+}
+#homework .Next-bg-color{
+    background-color: #108DEE;
+}
+#homework .Next-border{
+    border: #108DEE solid 1.2px; opacity: 1;
+}
+#homework .Next-btn{
+    color: #108DEE;
+    background-color: #CFE8FC;
 }
 #homework .mydropdown {
     /* display: flex;
@@ -51,7 +91,7 @@
     width: 100%;
     height: auto;
     border-radius: 15px;
-    background-color:var(--bg-card);
-    box-shadow: 1px 1px 3px 0px #0000001b;
+    background-color: var(--bg-main);
+    box-shadow: 6px 6px 10px 1px #0000000D;
     overflow-x: hidden;
 }

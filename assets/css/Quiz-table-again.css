@@ -1,0 +1,57 @@
+#Quiz-table-again .rectangle {
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    box-shadow: 1px 1px 3px 0px #0000001b;
+    overflow-x: hidden;
+}
+
+#Quiz-table-again .rec2 {
+    background-color: #E7EFFB;
+    border-radius: 10px;
+}
+#Quiz-table-again .rec1 {
+    background-color: #F9F9F9;
+    border-radius: 10px;
+}
+
+#Quiz-table-again .rec2 .th {
+    font-size: var(--font-s-18);
+    color: var(--font-c);
+    font-weight: var(--font-w-6);
+}
+
+#Quiz-table-again .table-1 {
+    border: none;
+    /* Remove default table border */
+    border-radius: 0px;
+    /* Apply border radius */
+    overflow: hidden;
+    /* Hide any overflow content */
+}
+
+#Quiz-table-again .table-1 th {
+    border: none;
+    /* Remove borders for table cells */
+}
+
+#Quiz-table-again table {
+    font-family: var(--font-f);
+}
+
+#Quiz-table-again .finsh {
+    background-color: #DCEFD9;
+    color: #2D861E;
+}
+
+#Quiz-table-again .Notfinsh {
+    background-color: #FAF1DC;
+    color: #E1AE31;
+}
+
+.tabel-contaner {
+    overflow-y: auto;
+    max-height: 370px;
+}
