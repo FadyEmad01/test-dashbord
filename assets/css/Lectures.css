@@ -1,7 +1,7 @@
 #Lectures .dropdown-menu .dropdown-item:hover{
     background-color: #E7F0FB;
 }
-#Lectures .rectangle{
+/* #Lectures .rectangle{
     border: none;
     width: 100%;
     height: auto;
@@ -9,7 +9,7 @@
     background-color: var(--bg-card);
     box-shadow: 1px 1px 3px 0px #0000001b;
     overflow-x: hidden;
-}
+} */
 #Lectures .content h1{
     font-size: var(--font-s-22);
     font-weight: var(--font-w-7);

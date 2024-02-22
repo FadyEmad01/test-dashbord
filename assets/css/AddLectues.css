@@ -26,9 +26,9 @@
 }
 
 .filepond--panel-root {
-	border-radius: 2em;
+	border-radius: 1.5em;
 	background-color: #edf0f4;
-	height: 1em;
+	height: 2em;
 }
 
 .filepond--item-panel {

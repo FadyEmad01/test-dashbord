@@ -33,11 +33,11 @@
     height: 45px;
 }
 
-/* #Login3 .container1 {
-    width: 50%;
+#Login3 .container1 {
+    width: 70%;
     height: 50%;
     margin: auto;
-} */
+}
 
 #Login3 h1 {
     font-size: 32px;
@@ -130,14 +130,14 @@
 }
 
 #Login3 .button {
-    display: flex;
+    /* display: flex;
     justify-content: start;
     align-items: center;
     padding: 9px 12px;
-    gap: 8px;
+    gap: 8px; */
     /* height: 60px;
     width: 200px; */
-    border: none;
+    /* border: none; */
     /* background-image: linear-gradient(
       to right,
       #788dbf,
@@ -146,18 +146,39 @@
       #4764a2,
       #355798
     ); */
-    background-color: white;
+    /* background-color: white;
     border-radius: 5px;
     cursor: pointer;
+    box-sizing: border-box; */
 }
-#Login3 .button:hover {
+/* #Login3 .button:hover {
   
-    border: #0F5891 solid 1px;
-  
+    border: #0F5891 solid;
+    box-sizing: border-box;
     background-color: #E0EBF7;
     border-radius: 5px;
     cursor: pointer;
+} */
+#Login3 .button {
+    display: flex; /* Make the button a flex container */
+    justify-content: start; /* Align content to the start (left) */
+    align-items: center; /* Align items vertically at the center */
+    padding: 9px 12px; /* Padding around the button content */
+    gap: 8px; /* Spacing between child elements */
+    background-color: white; /* Button background color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    border: 1px solid transparent; /* Add a transparent border */
 }
+
+#Login3 .button:hover {
+    border-color: #0F5891; /* Border color on hover */
+    background-color: #E0EBF7; /* Background color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+    cursor: pointer; /* Cursor style on hover */
+}
+
 
 #Login3 .lable {
     line-height: 22px;

@@ -29,7 +29,7 @@
 }
 
 #Login2 .container1 {
-    width: 50%;
+    width: 70%;
     height: 50%;
     margin: auto;
 }
@@ -145,4 +145,20 @@
         margin: 10px;
         width: 30px;
     }
+}
+
+select,
+select option {
+  color:  #22222240 !important;
+ 
+}
+
+select:invalid,
+select option[value=""] {
+  color: #999999 !important;
+}
+
+label {
+  display: block;
+  margin: 16px 0;
 }

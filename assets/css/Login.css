@@ -1,8 +1,14 @@
 /*--------------------------------------------------------------
 # login page
 --------------------------------------------------------------*/
+
 #Login .card {
   border: none;
+}
+#Login .container1 {
+  width: 70%;
+  height: 50%;
+  margin: auto;
 }
 
 #Login .h1 {
@@ -110,4 +116,21 @@
   margin: 10px;
   width: 30px;
 }
+}
+ #Login input:focus {
+  box-shadow: none;
+  border-color: #86b7fe;
+}
+#Login .input-group-text {
+  background-color: white;
+border: none;
+}
+
+#Login input:focus ~ #button-addon2 {
+  box-shadow: none;
+  border-color: #86b7fe !important;
+} 
+#Login input:focus ~ span .input-group-text {
+  box-shadow: none;
+  border-color: #86b7fe !important;
 }

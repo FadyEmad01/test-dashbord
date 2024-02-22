@@ -21,6 +21,11 @@
     <!-- swiper -->
     <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css" />
     <!-- end swiper -->
+    <link rel="stylesheet" href="assets/vendors/node_modules/filepond/dist/filepond.css">
+
+    <!-- <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" /> -->
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+        rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/Homework-2.css">
     <link rel="stylesheet" href="assets/css/SHARED.css">
@@ -132,21 +137,21 @@
             <div class=" pt-1 main-content card">
                 <main>
                     <section id="Homework-2">
-                    
+
                         <div class="container my-4">
                             <div class="row">
                                 <div class=" content_container ">
                                     <div class="rectangle-1 ">
                                         <div class="row">
                                             <div class="col-11">
-                                                <div class="d-flex justify-content-md-between justify-content-evenly align-items-center content">
+                                                <div
+                                                    class="d-flex justify-content-md-between justify-content-evenly align-items-center content">
                                                     <div>
                                                         <h1 class="text-end">الواجب الاول : الخطاب الخارجي </h1>
                                                         <p class="mb-0 text-end">الخطاب الخارجي</p>
                                                     </div>
                                                     <div>
-                                                        <img
-                                                            src="assets/images/notebook-dynamic-color.png" alt="">
+                                                        <img src="assets/images/notebook-dynamic-color.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -370,15 +375,16 @@
                                                         <div class="d-flex align-items-center">
                                                             <div class="col-4">
                                                                 <h6 class="dates">اجابات الطلاب</h6>
-    
+
                                                             </div>
                                                             <div class="col-">
-                                                                <button class="btn btn-outline-warning px-4 py-2 m-2 " type="button"
-                                                                style="border-radius: 10px;">مشاهدة<i class="fa-solid fa-arrow-left me-4"></i>
-                                                            </button>
+                                                                <button class="btn btn-outline-warning px-4 py-2 m-2 "
+                                                                    type="button" style="border-radius: 10px;">مشاهدة<i
+                                                                        class="fa-solid fa-arrow-left me-4"></i>
+                                                                </button>
                                                             </div>
                                                         </div>
-                                                       
+
                                                     </div>
 
                                                 </div>
@@ -392,11 +398,57 @@
                         <div class="container">
                             <div class="row mt-4">
                                 <div class="d-flex justify-content-end align-items-center">
-                                    
+
                                     <div>
-                                        <a href="./AddLectures.html" class="btn btn-warning m-2 px-4 py-2 text-light"
-                                            style="border-radius: 14px;">اضافة ملف<i class="fa-solid fa-arrow-left me-4"></i> 
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href=""
+                                            class="btn btn-warning m-2 px-4 py-2 text-light"
+                                            style="border-radius: 14px;">اضافة ملف<i
+                                                class="fa-solid fa-arrow-left me-4"></i>
                                         </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button trigger modal -->
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">تحميل ملف</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <input type="file" class="filepond" multiple name="filepond"
+                                                    data-allow-reorder="true" data-max-file-size="3MB"
+                                                    data-max-files="1" dropValidation="true"
+                                                    labelButtonProcessItem="Upload">
+                                                <h6 class="text-start"
+                                                    style="color: #9D9D9D ;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                                    Formats accepted are .csv and .xlsx</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-end align-items-center">
+                                                <div>
+                                                    <button class="btn btn-outline-warning mx-2 py-2 px-4" type="button"
+                                                        style="border-radius: 14px;">الغاء
+                                                    </button></button>
+                                                </div>
+                                                <div>
+                                                    <a href="./AddLectures.html"
+                                                        class="btn btn-warning text-light mx-2 py-2 px-4 "
+                                                        style="border-radius: 14px;">تحميل الملف <i
+                                                            class="fa-solid fa-plus me-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -415,6 +467,15 @@
     <script src="assets/vendors/echarts/echarts.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script
+        src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js">
+    </script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js">
+    </script>
+    <script src="https://unpkg.com/filepond-plugin-image-edit/dist/filepond-plugin-image-edit.js"></script>
+
+    <script src="assets/vendors/node_modules/filepond/dist/filepond.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "filepond": "^4.30.6"
+    "filepond": "^4.30.6",
+    "fullcalendar": "^6.1.11"
   }
 }

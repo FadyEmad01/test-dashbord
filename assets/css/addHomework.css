@@ -12,7 +12,14 @@
     font-weight: var(--font-w-5);
     color: var(--font-c);
 }
-
+#Add-homework .edit-p{
+    margin-right: 20%;
+}
+@media(max-width: 764px){
+    #Add-homework .edit-p{
+        margin-right: 0px;
+    }
+}
 /* .filepond--root {
     max-height: 10em;
 } */
@@ -26,9 +33,9 @@
 }
 
 .filepond--panel-root {
-	border-radius: 2em;
+	border-radius: 1.5em;
 	background-color: #edf0f4;
-	height: 1em;
+	height: 2em;
 }
 
 .filepond--item-panel {
@@ -38,5 +45,21 @@
 .filepond--drip-blob {
 	background-color: #7f8a9a;
 }
-
-  
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../images/shape1.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../images/clock.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}

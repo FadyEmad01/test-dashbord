@@ -1,4 +1,4 @@
-#myAccordion-settings .rectangle {
+/* #myAccordion-settings .rectangle {
     border: none;
     width: 100%;
     height: auto;
@@ -6,7 +6,7 @@
     background-color: var(--bg-card);
     box-shadow: 1px 1px 3px 0px #0000001b;
     overflow-x: hidden;
-}
+} */
 
 .accordion-button::after {
     margin-left: 0;

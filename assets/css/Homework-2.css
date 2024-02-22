@@ -70,6 +70,9 @@ body {
 #Homework-2 .card .clock {
     color: #22222280;
 }
+#Homework-2 .modal .modal-title{
+    color: #073051;
+}
 #Homework-2 .card .card-subtitle {
     color: #22222280;
     font-size: var(--font-s-20);

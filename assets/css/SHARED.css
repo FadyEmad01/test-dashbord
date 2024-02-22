@@ -51,3 +51,12 @@
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
 }
+.rectangle-bg{
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--bg-card);
+    box-shadow: 1px 1px 3px 0px #0000001b;
+    overflow-x: hidden;
+}

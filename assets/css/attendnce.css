@@ -25,7 +25,7 @@
     height: auto;
     background-color: #FEFEFE;
 } */
-#Attendnce .rectangle{
+/* #Attendnce .rectangle{
     border: none;
     width: 100%;
     height: auto;
@@ -33,7 +33,7 @@
     background-color: var(--bg-card);
     box-shadow: 1px 1px 3px 0px #0000001b;
     overflow-x: hidden;
-}
+} */
 #Attendnce .content h1{
     font-size: var(--font-s-22);
     font-weight: var(--font-w-7);

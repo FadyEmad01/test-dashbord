@@ -23,7 +23,7 @@
     <!-- end swiper -->
     <!-- filepond -->
     <link rel="stylesheet" href="assets/vendors/node_modules/filepond/dist/filepond.css">
-   
+
     <!-- <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" /> -->
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
         rel="stylesheet" />
@@ -157,11 +157,12 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea1"
                                                 rows="3"></textarea>
                                         </div>
-                                        <div class="col-12 mt-5">
+                                        <hr class="mt-5">
+                                        <div class="col-12 mt-3">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div>
                                                     <label class="form-label"
-                                                    style="font-size: 25px; font-weight: 700;">الغلاف</label>
+                                                        style="font-size: 25px; font-weight: 700;">الغلاف</label>
                                                 </div>
                                                 <!-- <div>
                                                     <a href="./AddLectures.html" class="btn btn-outline-warning m-2"
@@ -169,34 +170,49 @@
                                                         class="fa-solid fa-plus me-2"></i></a>
                                                 </div> -->
                                             </div>
-                                            
-                                            <div class="col-6">
+
+                                            <div class="col-12 col-md-6">
                                                 <p class="form-label"
                                                     style="font-size: 16px; font-weight: 400; color: #22222280;">قم
                                                     باضافة الغلاف المناسب الي الواجب </p>
                                                 <input type="file" class="filepond" multiple name="filepond"
                                                     data-allow-reorder="true" data-max-file-size="3MB"
                                                     data-max-files="1" dropValidation="true"
-                                                    labelButtonProcessItem="Upload">
+                                                    labelIdle="قم بسحب وإسقاط الملفات أو <span class='filepond--label-action'>اضغط هنا لتصفح</span>"
+                                                    labelFileProcessing="جارٍ التحميل"
+                                                    labelFileProcessingComplete="تم التحميل"
+                                                    labelFileProcessingAborted="تم إلغاء التحميل"
+                                                    labelFileProcessingError="خطأ في التحميل"
+                                                    labelFileProcessingRevert="التراجع عن التحميل"
+                                                    labelFileProcessingRetry="إعادة المحاولة"
+                                                    labelTapToCancel="انقر للإلغاء"
+                                                    labelTapToRetry="انقر لإعادة المحاولة" labelTapToUndo="انقر للتراجع"
+                                                    labelButtonRemoveItem="إزالة" labelButtonAbortItemLoad="إلغاء"
+                                                    labelButtonRetryItemLoad="إعادة المحاولة"
+                                                    labelButtonAbortItemProcessing="إلغاء"
+                                                    labelButtonUndoItemProcessing="تراجع"
+                                                    labelButtonRetryItemProcessing="إعادة المحاولة"
+                                                    labelButtonProcessItem="تحميل">
                                             </div>
                                         </div>
 
 
-
+                                        <hr class="my-3">
                                         <!--  -->
                                         <div class="col-12">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div>
                                                     <label class="form-label"
-                                                    style="font-size: 25px; font-weight: 700;">الملفات</label>
+                                                        style="font-size: 25px; font-weight: 700;">الملفات</label>
                                                 </div>
                                                 <div>
-                                                    <a href="./AddLectures.html" class="btn btn-outline-warning m-2"
-                                                    style="border-radius: 10px;">اضافة جديد <i
-                                                        class="fa-solid fa-plus me-2"></i></a>
+                                                    <a href="./AddLectures.html"
+                                                        class="btn btn-outline-warning m-2 py-2"
+                                                        style="border-radius: 10px;">اضافة جديد <i
+                                                            class="fa-solid fa-plus me-2"></i></a>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-12 col-md-6">
                                                 <!-- <label class="form-label"
                                                     style="font-size: 25px; font-weight: 700;">الملفات</label> -->
                                                 <p class="form-label"
@@ -205,7 +221,21 @@
                                                 <input type="file" class="filepond" multiple name="filepond"
                                                     data-allow-reorder="true" data-max-file-size="3MB"
                                                     data-max-files="1" dropValidation="true"
-                                                    labelButtonProcessItem="Upload">
+                                                    labelIdle="قم بسحب وإسقاط الملفات أو <span class='filepond--label-action'>اضغط هنا لتصفح</span>"
+                                                    labelFileProcessing="جارٍ التحميل"
+                                                    labelFileProcessingComplete="تم التحميل"
+                                                    labelFileProcessingAborted="تم إلغاء التحميل"
+                                                    labelFileProcessingError="خطأ في التحميل"
+                                                    labelFileProcessingRevert="التراجع عن التحميل"
+                                                    labelFileProcessingRetry="إعادة المحاولة"
+                                                    labelTapToCancel="انقر للإلغاء"
+                                                    labelTapToRetry="انقر لإعادة المحاولة" labelTapToUndo="انقر للتراجع"
+                                                    labelButtonRemoveItem="إزالة" labelButtonAbortItemLoad="إلغاء"
+                                                    labelButtonRetryItemLoad="إعادة المحاولة"
+                                                    labelButtonAbortItemProcessing="إلغاء"
+                                                    labelButtonUndoItemProcessing="تراجع"
+                                                    labelButtonRetryItemProcessing="إعادة المحاولة"
+                                                    labelButtonProcessItem="تحميل">
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -218,86 +248,97 @@
                                                 rows="3"></textarea>
                                         </div>
                                         <hr class="my-5">
-                                        <div class="col-8">
+                                        <div class="col-12 col-md-8">
                                             <div class="row mb-3">
-                                                <div class="col-3">
+                                                <div class="col-12 col-md-3" style="margin-left: -5%;">
                                                     <label for="inputDate" class=" col-form-label">تاريخ بداية
                                                         العرض:</label>
                                                 </div>
-                                                <div class="col-4">
-                                                    <input type="date" class="form-control">
+                                                <div class="col-6 col-md-4">
+                                                    <input type="date" class="form-control" style="color: #595959;">
                                                 </div>
-                                                <div class="col-4">
-                                                    <input type="time" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="row ">
-                                                <p class="text-center" style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div class="row mb-3">
-                                                <div class="col-3">
-                                                    <label for="inputDate" class=" col-form-label">تاريخ انتهاء العرض:</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                                <div class="col-4">
-                                                    <input type="time" class="form-control">
+                                                <div class="col-6 col-md-4">
+                                                    <input type="time" class="form-control" style="color: #595959;">
                                                 </div>
                                             </div>
                                             <div class="row ">
-                                                <p class="text-center" style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
+                                                <p class="edit-p"
+                                                    style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل
+                                                    التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
                                             </div>
                                         </div>
-                                        <div class="col-8">
+                                        <div class="col-12 col-md-8">
                                             <div class="row mb-3">
-                                                <div class="col-3">
+                                                <div class="col-12 col-md-3" style="margin-left: -5%;">
+                                                    <label for="inputDate" class=" col-form-label">تاريخ انتهاء
+                                                        العرض:</label>
+                                                </div>
+                                                <div class="col-6 col-md-4">
+                                                    <input type="date" class="form-control" style="color: #595959;">
+                                                </div>
+                                                <div class="col-6 col-md-4">
+                                                    <input type="time" class="form-control" style="color: #595959;">
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <p class="edit-p"
+                                                    style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل
+                                                    التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <div class="row mb-3">
+                                                <div class="col-12 col-md-3" style="margin-left: -5%;">
                                                     <label for="inputDate" class=" col-form-label">تاريخ الاستحقاق<span
-                                                        style="color: #E63329;">*</span>:</label>
+                                                            style="color: #E63329;">*</span>:</label>
                                                 </div>
-                                                <div class="col-4">
-                                                    <input type="date" class="form-control">
+                                                <div class="col-6 col-md-4">
+                                                    <input type="date" class="form-control" style="color: #595959;">
                                                 </div>
-                                                <div class="col-4">
-                                                    <input type="time" class="form-control">
+                                                <div class="col-6 col-md-4">
+                                                    <input type="time" class="form-control" style="color: #595959;">
                                                 </div>
                                             </div>
                                             <div class="row ">
-                                                <p class="text-center" style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
+                                                <p class="edit-p"
+                                                    style="color: #22222280; font-size: 14px; font-weight: 500;">ادخل
+                                                    التواريخ بالتنسيق يوم/ شهر/ سنة. يمكنك ادخال الوقت بأي زيادة.</p>
                                             </div>
                                         </div>
-                                        <hr class="my-5" >
+                                        <hr class="mt-5 mb-3">
                                         <div class="col-5">
-                                            <label for="inputdeg" style="font-size: 25px; font-weight: 700; color: #073051;" class="form-label">التقديرات</label>
+                                            <label for="inputdeg"
+                                                style="font-size: 25px; font-weight: 700; color: #073051;"
+                                                class="form-label">التقديرات</label>
                                             <div class="row my-3">
                                                 <label for="inputdeg" class="col-sm-2 col-form-label">الدرجة<span
-                                                    style="color: #E63329;">*</span></label>
+                                                        style="color: #E63329;">*</span></label>
                                                 <div class="col-sm-6">
                                                     <input type="text" class="form-control" id="inputdeg">
                                                 </div>
-                                              </div>
-                                            
+                                            </div>
+
                                         </div>
-                                        <div class="col-12 mt-5">
+                                        <div class="col-12 mt-3">
                                             <div class="d-flex justify-content-end align-items-center">
 
 
                                                 <div>
-                                                    <button class="btn btn-outline-warning m-2 py-2 px-4" type="button" style="border-radius: 14px;">الغاء
-                                                        </button></button>
-                  
+                                                    <button class="btn btn-outline-warning m-2 py-2 ms-3" type="button"
+                                                        style="border-radius: 14px; padding-left: 40px;  padding-right: 40px;">الغاء
+                                                    </button></button>
+
                                                 </div>
-            
-            
+
+
                                                 <div>
-                                                    <a href="./AddLectures.html" class="btn btn-warning text-light m-2 py-2 px-4"
-                                                        style="border-radius: 14px;">حفظ <i
-                                                            class="fa-solid fa-plus me-2"></i></a>
+                                                    <a href="./AddLectures.html"
+                                                        class="btn btn-warning text-light m-2 py-2 "
+                                                        style="border-radius: 14px; padding-left: 40px;  padding-right: 40px;">حفظ
+                                                    </a>
                                                 </div>
-            
-            
+
+
                                             </div>
                                         </div>
                                     </form>
@@ -311,7 +352,11 @@
         </div>
     </div>
     <script>
-
+        document.addEventListener('DOMContentLoaded', function () {
+            FilePond.setOptions({
+                labelIdle: 'اسحب ملف او قم بالضغط لاضافة ملف '
+            });
+        });
     </script>
 
     <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
