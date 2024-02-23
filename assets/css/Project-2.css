@@ -7,29 +7,29 @@ body {
 }
 
 
-#Lectures-2 .content_container {
+#Project-2 .content_container {
     border-radius: 15px;
     background: linear-gradient(134.23deg, #84BCE7 27.93%, #A7CDEA 38.91%, #D9EFF7 66.94%);
 
 }
-#Lectures-2 .rectangle-1 img{
+#Project-2 .rectangle-1 img{
     width: 200px;
 }
-#Lectures-2 .rectangle-1 h1 {
+#Project-2 .rectangle-1 h1 {
     font-family: var(--font-f);
     color: var(--font-c);
     font-weight: var(--font-w-7);
     font-size: var(--font-s-32);
 }
 
-#Lectures-2 .rectangle-1 p {
+#Project-2 .rectangle-1 p {
     font-family: var(--font-f);
     color: rgb(34, 34, 34, 0.5);
     font-weight: var(--font-w-6);
     font-size: var(--font-s-20);
 }
 
-#Lectures-2 .rectangle {
+#Project-2 .rectangle {
     border: none;
     width: 100%;
     height: auto;
@@ -39,60 +39,60 @@ body {
     overflow-x: hidden;
 }
 
-#Lectures-2 button {
+#Project-2 button {
     display: flex;
     align-items: center;
 }
 
-#Lectures-2 .card {
+#Project-2 .card {
     background-color: #FBFBFB;
     border: none;
     border-radius: 20px;
 }
-#Lectures-2 .filepond--panel-root {
+#Project-2 .filepond--panel-root {
 	border-radius: 1.5em;
 	background-color: #edf0f4;
 	height: 1em;
 }
-#Lectures-2 .card-title {
+#Project-2 .card-title {
     color: var(--font-c);
     font-size: var(--font-s-22);
     font-weight: var(--font-w-6);
 }
 
-#Lectures-2 .card-text {
+#Project-2 .card-text {
     color: #22222280;
     font-size: var(--font-s-20);
     font-weight: var(--font-w-4);
 }
 
-#Lectures-2 .card .dates {
+#Project-2 .card .dates {
     font-size: var(--font-s-22);
     font-weight: var(--font-w-6);
     color: var(--font-c);
 }
-#Lectures-2 .card .clock {
+#Project-2 .card .clock {
     color: #22222280;
 }
-#Lectures-2 .card .card-subtitle {
+#Project-2 .card .card-subtitle {
     color: #22222280;
     font-size: var(--font-s-20);
     font-weight: var(--font-w-4);
 }
 @media (max-width: 768px) {
-    #Lectures-2 .rectangle-1 h1 {
+    #Project-2 .rectangle-1 h1 {
         font-family: var(--font-f);
         color: var(--font-c);
         font-weight: var(--font-w-7);
         font-size: var(--font-s-22);
     }
-    #Lectures-2 .rectangle-1 p {
+    #Project-2 .rectangle-1 p {
         font-family: var(--font-f);
         color: rgb(34, 34, 34, 0.5);
         font-weight: var(--font-w-6);
         font-size: var(--font-s-16);
     }
-    #Lectures-2 .rectangle-1 img{
+    #Project-2 .rectangle-1 img{
         width: 100px;
     }
     
