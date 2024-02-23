@@ -139,19 +139,22 @@
                     <section id="Homework-2">
 
                         <div class="container my-4">
-                            <div class="row">
+                            <div class="row first-row" style=" width: 100% ;
+                            margin: auto;">
                                 <div class=" content_container ">
                                     <div class="rectangle-1 ">
-                                        <div class="row">
+                                        <div class="row ">
                                             <div class="col-11">
                                                 <div
                                                     class="d-flex justify-content-md-between justify-content-evenly align-items-center content">
-                                                    <div>
-                                                        <h1 class="text-end">الواجب الاول : الخطاب الخارجي </h1>
+                                                    <div class="me-4">
+                                                        <h1 class="text-end first-img">الواجب الاول : الخطاب الخارجي
+                                                        </h1>
                                                         <p class="mb-0 text-end">الخطاب الخارجي</p>
                                                     </div>
                                                     <div>
-                                                        <img src="assets/images/notebook-dynamic-color.png" alt="">
+                                                        <img style="width: 100%" class="first-img"
+                                                            src="assets/images/notebook-dynamic-color.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,9 +231,9 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="row mb-3">
+                                            <div class="row my-3">
                                                 <div class="col-md-7 col-12">
-                                                    <div class="row">
+                                                    <div class="row align-items-center">
                                                         <div class="col-md-4 col-12">
                                                             <h6 class="dates">تاريخ بداية العرض :</h6>
                                                         </div>
@@ -250,7 +253,7 @@
                                             </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-7 col-12">
-                                                    <div class="row">
+                                                    <div class="row align-items-center">
                                                         <div class="col-md-4 col-12">
                                                             <h6 class="dates">تاريخ بداية العرض :</h6>
                                                         </div>
@@ -270,7 +273,7 @@
                                             </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-7 col-12">
-                                                    <div class="row">
+                                                    <div class="row align-items-center">
                                                         <div class="col-md-4 col-12">
                                                             <h6 class="dates">تاريخ بداية العرض :</h6>
                                                         </div>
@@ -297,15 +300,15 @@
                         </div>
 
                         <div class="container">
-                            <div class="row mb-3">
+                            <div class="row my-3">
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <div class="row">
+                                                    <div class="row align-items-center">
                                                         <div class="col-md-2 col-6">
-                                                            <h6 class="dates">الدرجة:</h6>
+                                                            <h6 class="dates mt-1">الدرجة:</h6>
 
                                                         </div>
                                                         <div class="col-md-2 col-6">
@@ -330,8 +333,8 @@
                                             <h5 class="card-title">ملف</h5>
                                             <h6 class="card-subtitle mb-2">بعض المواقع المفيدة</h6>
                                             <div>
-                                                <a href="addProject.html"> <button class="btn  m-2 "
-                                                        style="border-radius: 8px; background-color: #FFFFFF; color: #22222280; font-size: 18px; font-weight: 600; border: #E6E6E6 solid;"><i
+                                                <a href="addProject.html"> <button class="btn  my-2  justify-content-start"
+                                                        style="border-radius: 8px;width: 240px; background-color: #FFFFFF; color: #22222280; font-size: 18px; font-weight: 600; border: #E6E6E6 solid;"><i
                                                             class="fa-regular fa-file-lines ms-2"
                                                             style="color: #08B839;"></i> المحاضرة
                                                         الأولى.pdf</button></a>
@@ -424,12 +427,26 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <input type="file" class="filepond" multiple name="filepond"
-                                                    data-allow-reorder="true" data-max-file-size="3MB"
-                                                    data-max-files="1" dropValidation="true"
-                                                    labelButtonProcessItem="Upload">
-                                                <h6 class="text-start"
+                                                data-allow-reorder="true" data-max-file-size="3MB"
+                                                data-max-files="1" dropValidation="true"
+                                                labelIdle="قم بسحب وإسقاط الملفات أو <span class='filepond--label-action'>اضغط هنا لتصفح</span>"
+                                                labelFileProcessing="جارٍ التحميل"
+                                                labelFileProcessingComplete="تم التحميل"
+                                                labelFileProcessingAborted="تم إلغاء التحميل"
+                                                labelFileProcessingError="خطأ في التحميل"
+                                                labelFileProcessingRevert="التراجع عن التحميل"
+                                                labelFileProcessingRetry="إعادة المحاولة"
+                                                labelTapToCancel="انقر للإلغاء"
+                                                labelTapToRetry="انقر لإعادة المحاولة" labelTapToUndo="انقر للتراجع"
+                                                labelButtonRemoveItem="إزالة" labelButtonAbortItemLoad="إلغاء"
+                                                labelButtonRetryItemLoad="إعادة المحاولة"
+                                                labelButtonAbortItemProcessing="إلغاء"
+                                                labelButtonUndoItemProcessing="تراجع"
+                                                labelButtonRetryItemProcessing="إعادة المحاولة"
+                                                labelButtonProcessItem="تحميل">
+                                                <h6 class="text-end"
                                                     style="color: #9D9D9D ;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                                                    Formats accepted are .csv and .xlsx</h6>
+                                                    المفات المقبوله.Pdf,Word,Excel</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -444,8 +461,7 @@
                                                 <div>
                                                     <a href="./AddLectures.html"
                                                         class="btn btn-warning text-light mx-2 py-2 px-4 "
-                                                        style="border-radius: 14px;">تحميل الملف <i
-                                                            class="fa-solid fa-plus me-2"></i></a>
+                                                        style="border-radius: 14px;">تحميل الملف</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -461,7 +477,13 @@
     </div>
     </div>
     </div>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            FilePond.setOptions({
+                labelIdle: 'اسحب ملف او قم بالضغط لاضافة ملف '
+            });
+        });
+    </script>
 
     <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendors/echarts/echarts.min.js"></script>

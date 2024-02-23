@@ -5,7 +5,11 @@ body {
 .main-content {
     background-color: var(--bg-card) !important;
 }
+/* #Homework-2 .first-rowr {
+  width: 100% ;
+  margin: auto;
 
+} */
 
 #Homework-2 .content_container {
     border-radius: 15px;
@@ -61,7 +65,11 @@ body {
     font-size: var(--font-s-20);
     font-weight: var(--font-w-4);
 }
-
+#Homework-2 .filepond--panel-root {
+	border-radius: 1.5em;
+	background-color: #edf0f4;
+	height: 2.3em;
+}
 #Homework-2 .card .dates {
     font-size: var(--font-s-22);
     font-weight: var(--font-w-6);
@@ -70,6 +78,7 @@ body {
 #Homework-2 .card .clock {
     color: #22222280;
 }
+
 #Homework-2 .modal .modal-title{
     color: #073051;
 }
@@ -95,4 +104,22 @@ body {
         width: 100px;
     }
     
+}
+
+.modal-backdrop {
+    --bs-backdrop-zindex: 1050;
+    --bs-backdrop-bg: #000;
+    --bs-backdrop-opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--bs-backdrop-zindex);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bs-backdrop-bg)
+}
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - var(--bs-modal-margin) * 2)
 }
