@@ -59,7 +59,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="homeworkTable.html">
+                    <a href="Table.html">
                         <i class="fa-regular fa-calendar"></i>
                         <span>الجداول</span>
                     </a>
@@ -91,7 +91,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Quizs.html">
+                    <a href="Quiz-3.html">
                         <i class="fa-solid fa-file"></i>
                         <span>الاختبارات</span>
                     </a>
@@ -206,10 +206,25 @@
                                                         style="font-size: 25px; font-weight: 700;">الملفات</label>
                                                 </div>
                                                 <div>
-                                                    <a href="./AddLectures.html"
+                                                    <!-- <a href="./AddLectures.html"
                                                         class="btn btn-outline-warning m-2 py-2"
                                                         style="border-radius: 10px;">اضافة جديد <i
-                                                            class="fa-solid fa-plus me-2"></i></a>
+                                                            class="fa-solid fa-plus me-2"></i></a> -->
+
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-warning m-2 py-2 " type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                                    style="border-radius: 10px;">
+                                                                    اضافة جديد <i class="fa-solid fa-plus me-2"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" onclick="addFile()"
+                                                                            href="#">ملف</a></li>
+                                                                    <li><a class="dropdown-item" onclick="addLink()"
+                                                                            href="#">رابط</a></li>
+        
+                                                                </ul>
+                                                            </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6">
@@ -247,6 +262,16 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea2"
                                                 rows="3"></textarea>
                                         </div>
+                                         <!-- /////////////////////////////////////////////////////////// -->
+                                         <div class=" FILLAPPEND">
+                                            <!-- Content will be appended here -->
+                                        </div>
+                                        <!-- ////////////////////////////////////////////////////////// -->
+                                        <!-- /////////////////////////////////////////////////////////// -->
+                                        <div class="  LINKAPPEND">
+                                            <!-- Content will be appended here -->
+                                        </div>
+                                        <!-- ////////////////////////////////////////////////////////// -->
                                         <hr class="my-5">
                                         <div class="col-12 col-md-8">
                                             <div class="row mb-3">
@@ -324,15 +349,18 @@
 
 
                                                 <div>
-                                                    <button class="btn btn-outline-warning m-2 py-2 ms-3" type="button"
+                                                    <a href="Projects.html">
+                                                        <button class="btn btn-outline-warning m-2 py-2 ms-3" type="button"
                                                         style="border-radius: 14px; padding-left: 40px;  padding-right: 40px;">الغاء
-                                                    </button></button>
+                                                    </button>
+                                                    </a>
+                                                   
 
                                                 </div>
 
 
                                                 <div>
-                                                    <a href="./AddLectures.html"
+                                                    <a href="Projects-2.html"
                                                         class="btn btn-warning text-light m-2 py-2 "
                                                         style="border-radius: 14px; padding-left: 40px;  padding-right: 40px;">حفظ
                                                     </a>
@@ -358,6 +386,7 @@
             });
         });
     </script>
+    
 
     <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendors/echarts/echarts.min.js"></script>

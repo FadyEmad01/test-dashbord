@@ -45,3 +45,12 @@
     font-size: var(--font-s-16);
     font-weight: var(--font-w-5);
 }
+#myAccordion-settings .accordion-body{
+    background-color: #F5F5F5;
+}
+#myAccordion-settings #button-addon2{
+    background-color: #FFFFFF;
+}
+#myAccordion-settings #button-addon2:hover{
+    color: #22222280 ;
+}

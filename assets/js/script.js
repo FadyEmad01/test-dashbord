@@ -298,20 +298,20 @@ const pond = FilePond.create(inputElement[0]);
 const pond1 = FilePond.create(inputElement[1]);
 
 // Listen for addfile event
-pond.on('addfile', (error, file) => {
-  if (!error) {
-      console.log('File added:', file);
-  } else {
-      console.error('Error adding file:', error);
-  }
-});
-pond1.on('addfile', (error, file) => {
-  if (!error) {
-      console.log('File added:', file);
-  } else {
-      console.error('Error adding file:', error);
-  }
-});
+// pond.on('addfile', (error, file) => {
+//   if (!error) {
+//       console.log('File added:', file);
+//   } else {
+//       console.error('Error adding file:', error);
+//   }
+// });
+// pond1.on('addfile', (error, file) => {
+//   if (!error) {
+//       console.log('File added:', file);
+//   } else {
+//       console.error('Error adding file:', error);
+//   }
+// });
 
 
 function togglePasswordVisibility(index) {
@@ -330,4 +330,181 @@ function togglePasswordVisibility(index) {
 }
 
 
-  
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+ 
+ 
+      //   function addFile() {
+      //       var fileContent = `
+      //           <div class="col-12">
+      //               <div class="d-flex justify-content-between align-items-center">
+      //                   <div>
+      //                       <label class="form-label" style="font-size: 25px; font-weight: 700;">الملفات</label>
+      //                   </div>
+      //                   <div>
+      //                       <!-- <a href="" class="btn btn-outline-warning m-2 py-2" style="border-radius: 10px;">اضافة جديد <i class="fa-solid fa-plus me-2"></i></a> -->
+      //                       <div class="dropdown">
+      //                           <button class="btn btn-outline-warning m-2 py-2 " type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 10px;">اضافة جديد <i class="fa-solid fa-plus me-2"></i></button>
+      //                           <ul class="dropdown-menu">
+      //                               <li><a class="dropdown-item" href="#">ملف</a></li>
+      //                               <li><a class="dropdown-item" href="#">رابط</a></li>
+      //                           </ul>
+      //                       </div>
+      //                   </div>
+      //               </div>
+      //               <div class="col-12 col-md-6">
+      //                   <!-- <label class="form-label" style="font-size: 25px; font-weight: 700;">الملفات</label> -->
+      //                   <p class="form-label" style="font-size: 16px; font-weight: 500; color: #073051;">اضافة ملف</p>
+      //                   <input type="file" class="filepond" multiple name="filepond" data-allow-reorder="true" data-max-file-size="3MB" data-max-files="1" dropValidation="true" labelIdle="قم بسحب وإسقاط الملفات أو <span class='filepond--label-action'>اضغط هنا لتصفح</span>" labelFileProcessing="جارٍ التحميل" labelFileProcessingComplete="تم التحميل" labelFileProcessingAborted="تم إلغاء التحميل" labelFileProcessingError="خطأ في التحميل" labelFileProcessingRevert="التراجع عن التحميل" labelFileProcessingRetry="إعادة المحاولة" labelTapToCancel="انقر للإلغاء" labelTapToRetry="انقر لإعادة المحاولة" labelTapToUndo="انقر للتراجع" labelButtonRemoveItem="إزالة" labelButtonAbortItemLoad="إلغاء" labelButtonRetryItemLoad="إعادة المحاولة" labelButtonAbortItemProcessing="إلغاء" labelButtonUndoItemProcessing="تراجع" labelButtonRetryItemProcessing="إعادة المحاولة" labelButtonProcessItem="تحميل">
+      //               </div>
+      //           </div>
+      //           <div class="col-12">
+      //               <label for="input2" class="form-label">عنوان الملف</label>
+      //               <input type="text" class="form-control" id="input2">
+      //           </div>
+      //           <div class="col-12">
+      //               <label for="exampleFormControlTextarea2" class="form-label">وصف</label>
+      //               <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+      //           </div>
+      //       `;
+            
+      //       document.querySelector('.FILLAPPEND').innerHTML = fileContent;
+      //       attachEventListeners(); // Attach event listeners after adding the new content
+      //   }
+    
+      //   function addLink() {
+      //       var linkContent = `
+      //           <div class="form-card mt-3 pb-3">
+      //               <h4 class="py-4">رابط ويب</h4>
+      //               <form class="row g-3">
+      //                   <div class="col-12">
+      //                       <label for="inputLocation" class="form-label">عنوان </label>
+      //                       <input type="text" class="form-control" id="inputLocation">
+      //                   </div>
+      //                   <div class="col-12">
+      //                       <label for="inputName" class="form-label">الرابط <span style="color: #E63329;">*</span></label>
+      //                       <input type="text" id="inputName" class="form-control">
+      //                   </div>
+      //               </form>
+      //           </div>
+      //       `;
+            
+      //       document.querySelector('.LINKAPPEND').innerHTML = linkContent;
+      //       attachEventListeners(); // Attach event listeners after adding the new content
+      //   }
+    
+      //   function attachEventListeners() {
+      //       // Add event listeners to the dropdown menu items inside the newly appended content
+      //       document.querySelectorAll('.dropdown-item').forEach(item => {
+      //           item.addEventListener('click', function() {
+      //               // Handle the click event here if needed
+      //           });
+      //       });
+      //   }
+    
+      //   document.addEventListener('DOMContentLoaded', function () {
+      //     FilePond.setOptions({
+      //         labelIdle: 'اسحب ملف او قم بالضغط لاضافة ملف '
+      //     });
+      // });
+
+      /////////////////////////////////////
+      function addFile() {
+        var fileContent = `
+        <hr class="my-5">
+        <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <label class="form-label" style="font-size: 25px; font-weight: 700;">الملفات</label>
+            </div>
+            <div>
+                <!-- <a href="" class="btn btn-outline-warning m-2 py-2" style="border-radius: 10px;">اضافة جديد <i class="fa-solid fa-plus me-2"></i></a> -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-warning m-2 py-2 " type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 10px;">اضافة جديد <i class="fa-solid fa-plus me-2"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="addFile()" href="#">ملف</a></li>
+                        <li><a class="dropdown-item" onclick="addLink()" href="#">رابط</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <!-- <label class="form-label" style="font-size: 25px; font-weight: 700;">الملفات</label> -->
+            <p class="form-label" style="font-size: 16px; font-weight: 500; color: #073051;">اضافة ملف</p>
+            <input type="file" class="filepond" multiple name="filepond" data-allow-reorder="true" data-max-file-size="3MB" data-max-files="1" dropValidation="true" labelIdle="قم بسحب وإسقاط الملفات أو <span class='filepond--label-action'>اضغط هنا لتصفح</span>" labelFileProcessing="جارٍ التحميل" labelFileProcessingComplete="تم التحميل" labelFileProcessingAborted="تم إلغاء التحميل" labelFileProcessingError="خطأ في التحميل" labelFileProcessingRevert="التراجع عن التحميل" labelFileProcessingRetry="إعادة المحاولة" labelTapToCancel="انقر للإلغاء" labelTapToRetry="انقر لإعادة المحاولة" labelTapToUndo="انقر للتراجع" labelButtonRemoveItem="إزالة" labelButtonAbortItemLoad="إلغاء" labelButtonRetryItemLoad="إعادة المحاولة" labelButtonAbortItemProcessing="إلغاء" labelButtonUndoItemProcessing="تراجع" labelButtonRetryItemProcessing="إعادة المحاولة" labelButtonProcessItem="تحميل">
+        </div>
+    </div>
+    <div class="col-12">
+        <label for="input2" class="form-label">عنوان الملف</label>
+        <input type="text" class="form-control" id="input2">
+    </div>
+    <div class="col-12">
+        <label for="exampleFormControlTextarea2" class="form-label">وصف</label>
+        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+    </div>
+
+   
+`;
+        
+        // Create a new element to hold the file content
+    var newFileContent = document.createElement('div');
+    newFileContent.innerHTML = fileContent;
+
+    // Append the new content to the existing content
+    document.querySelector('.FILLAPPEND').appendChild(newFileContent);
+
+    // Create FilePond instance for the appended element
+    const appendedInputElement = newFileContent.querySelector('.filepond');
+    const newPond = FilePond.create(appendedInputElement);
+    attachFilePondListeners(newPond); // Attach event listeners for the new FilePond instance
+    }
+    
+    function addLink() {
+        var linkContent = `
+        <hr class="my-5">
+        <div class="form-card mt-3 pb-3">
+        <h4 class="py-4">رابط ويب</h4>
+        <form class="row g-3">
+            <div class="col-12">
+                <label for="inputLocation" class="form-label">عنوان </label>
+                <input type="text" class="form-control" id="inputLocation">
+            </div>
+            <div class="col-12">
+                <label for="inputName" class="form-label">الرابط <span style="color: #E63329;">*</span></label>
+                <input type="text" id="inputName" class="form-control">
+            </div>
+        </form>
+    </div>
+    
+`;
+        
+        // Create a new element to hold the link content
+    var newLinkContent = document.createElement('div');
+    newLinkContent.innerHTML = linkContent;
+
+    // Append the new content to the existing content
+    document.querySelector('.LINKAPPEND').appendChild(newLinkContent);
+
+    // Attach event listeners if needed
+    }
+    
+    function attachEventListeners() {
+        // Add event listeners to the dropdown menu items inside the newly appended content
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Handle the click event here if needed
+            });
+        });
+    }
+    
+    function attachFilePondListeners(pond) {
+        // Listen for addfile event on the new FilePond instance
+        pond.on('addfile', (error, file) => {
+            if (!error) {
+                console.log('File added:', file);
+            } else {
+                console.error('Error adding file:', error);
+            }
+        });
+    }
+    

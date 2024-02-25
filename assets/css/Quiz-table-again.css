@@ -30,6 +30,18 @@
     color: var(--font-c);
     font-weight: var(--font-w-6);
 }
+@media(max-width: 768px) {
+    #Quiz-table-again .th {
+        font-size: var(--font-s-12);
+       
+        /* font-weight: var(--font-w-6); */
+    }
+    #Quiz-table-again .rec2 .th {
+        font-size: var(--font-s-12);
+        color: var(--font-c);
+        font-weight: var(--font-w-6);
+    }
+}
 
 #Quiz-table-again .table-1 {
     border: none;

@@ -1,22 +1,22 @@
-#AddProject .form-card{
+#QuizINFO .form-card{
     background-color: var(--bg-card);
     border-radius: 15px;
 }
-#AddProject .form-card h4{
+#QuizINFO .form-card h4{
     font-size: var(--font-s-32);
     font-weight: var(--font-w-7);
     color: var(--font-c);
 }
-#AddProject .form-card label{
+#QuizINFO .form-card label{
     font-size: var(--font-s-16);
     font-weight: var(--font-w-5);
     color: var(--font-c);
 }
-#AddProject .edit-p{
+#QuizINFO .edit-p{
     margin-right: 20%;
 }
 @media(max-width: 764px){
-    #AddProject .edit-p{
+    #QuizINFO .edit-p{
         margin-right: 0px;
     }
 }
@@ -45,7 +45,6 @@
 .filepond--drip-blob {
 	background-color: #7f8a9a;
 }
-
 input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
     opacity: 1;
@@ -63,28 +62,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 20px;
     height: 20px;
     border-width: thin;
-} 
-
-#AddProject button {
-    display: flex;
-    align-items: center; 
 }
-#AddProject .dropdown-item{
-    text-align: start;
-}
-#AddProject .dropdown-menu{
-    background-color: #F9F9F9;
-    border: 0;
-}
-.dropdown-item:focus,
-.dropdown-item:hover {
-    color: var(--bs-dropdown-link-hover-color);
-    background-color: #E7F0FB
-}
-
-.dropdown-item.active,
-.dropdown-item:active {
-    color: var(--bs-dropdown-link-active-color);
-    text-decoration: none;
-    background-color: #E7F0FB
+.container-circle{
+    width: 60%;
+    margin: auto;
 }

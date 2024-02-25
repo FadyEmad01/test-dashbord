@@ -58,7 +58,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="homeworkTable.html">
+                    <a href="Table.html">
                         <i class="fa-regular fa-calendar"></i>
                         <span>الجداول</span>
                     </a>
@@ -84,13 +84,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="HomeWork.html">
+                    <a href="HomeWork.html" class="active">
                         <i class="fa-solid fa-book-open"></i>
                         <span>الواجبات</span>
                     </a>
                 </li>
                 <li>
-                    <a href="Quizs.html">
+                    <a href="Quiz-3.html">
                         <i class="fa-solid fa-file"></i>
                         <span>الاختبارات</span>
                     </a>
@@ -333,7 +333,8 @@
                                             <h5 class="card-title">ملف</h5>
                                             <h6 class="card-subtitle mb-2">بعض المواقع المفيدة</h6>
                                             <div>
-                                                <a href="AddHomework.html"> <button class="btn  my-2  justify-content-start"
+                                                <a href="AddHomework.html"> <button
+                                                        class="btn  my-2  justify-content-start"
                                                         style="border-radius: 8px;width: 240px; background-color: #FFFFFF; color: #22222280; font-size: 18px; font-weight: 600; border: #E6E6E6 solid;"><i
                                                             class="fa-regular fa-file-lines ms-2"
                                                             style="color: #08B839;"></i> المحاضرة
@@ -381,10 +382,15 @@
 
                                                             </div>
                                                             <div class="col-">
-                                                                <button class="btn btn-outline-warning px-4 py-2 m-2 "
-                                                                    type="button" style="border-radius: 10px;">مشاهدة<i
-                                                                        class="fa-solid fa-arrow-left me-4"></i>
-                                                                </button>
+                                                                <a href="واجبات-.1.html">
+                                                                    <button
+                                                                        class="btn btn-outline-warning px-4 py-2 m-2 "
+                                                                        type="button"
+                                                                        style="border-radius: 10px;">مشاهدة<i
+                                                                            class="fa-solid fa-arrow-left me-4"></i>
+                                                                    </button>
+                                                                </a>
+
                                                             </div>
                                                         </div>
 
@@ -427,30 +433,42 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <input type="file" class="filepond" multiple name="filepond"
-                                                data-allow-reorder="true" data-max-file-size="3MB"
-                                                data-max-files="1" dropValidation="true"
-                                                labelIdle="قم بسحب وإسقاط الملفات أو <span class='filepond--label-action'>اضغط هنا لتصفح</span>"
-                                                labelFileProcessing="جارٍ التحميل"
-                                                labelFileProcessingComplete="تم التحميل"
-                                                labelFileProcessingAborted="تم إلغاء التحميل"
-                                                labelFileProcessingError="خطأ في التحميل"
-                                                labelFileProcessingRevert="التراجع عن التحميل"
-                                                labelFileProcessingRetry="إعادة المحاولة"
-                                                labelTapToCancel="انقر للإلغاء"
-                                                labelTapToRetry="انقر لإعادة المحاولة" labelTapToUndo="انقر للتراجع"
-                                                labelButtonRemoveItem="إزالة" labelButtonAbortItemLoad="إلغاء"
-                                                labelButtonRetryItemLoad="إعادة المحاولة"
-                                                labelButtonAbortItemProcessing="إلغاء"
-                                                labelButtonUndoItemProcessing="تراجع"
-                                                labelButtonRetryItemProcessing="إعادة المحاولة"
-                                                labelButtonProcessItem="تحميل">
+                                                    data-allow-reorder="true" data-max-file-size="3MB"
+                                                    data-max-files="1" dropValidation="true"
+                                                    labelIdle="قم بسحب وإسقاط الملفات أو <span class='filepond--label-action'>اضغط هنا لتصفح</span>"
+                                                    labelFileProcessing="جارٍ التحميل"
+                                                    labelFileProcessingComplete="تم التحميل"
+                                                    labelFileProcessingAborted="تم إلغاء التحميل"
+                                                    labelFileProcessingError="خطأ في التحميل"
+                                                    labelFileProcessingRevert="التراجع عن التحميل"
+                                                    labelFileProcessingRetry="إعادة المحاولة"
+                                                    labelTapToCancel="انقر للإلغاء"
+                                                    labelTapToRetry="انقر لإعادة المحاولة" labelTapToUndo="انقر للتراجع"
+                                                    labelButtonRemoveItem="إزالة" labelButtonAbortItemLoad="إلغاء"
+                                                    labelButtonRetryItemLoad="إعادة المحاولة"
+                                                    labelButtonAbortItemProcessing="إلغاء"
+                                                    labelButtonUndoItemProcessing="تراجع"
+                                                    labelButtonRetryItemProcessing="إعادة المحاولة"
+                                                    labelButtonProcessItem="تحميل">
                                                 <h6 class="text-end"
                                                     style="color: #9D9D9D ;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                                                     المفات المقبوله.Pdf,Word,Excel</h6>
                                             </div>
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="basic-url" class="form-label" style="color: #222222BF;
+                                                    ">عنوان الملف</label>
+
+
+                                                    <input type="text" class="form-control" id="basic-url"
+                                                        aria-describedby="basic-addon3 basic-addon4">
+
+
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
+                                    <div class="modal-footer px-0">
                                         <div class="col-12">
                                             <div class="d-flex justify-content-end align-items-center">
                                                 <div>

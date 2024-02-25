@@ -18,7 +18,7 @@
 #Homework-table table{
     font-family: var(--font-f);
 }
-.tabel-contaner {
+#Homework-table .tabel-contaner {
     overflow-y: auto; 
     max-height: 370px;
 }

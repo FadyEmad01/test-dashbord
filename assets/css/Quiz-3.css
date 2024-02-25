@@ -28,7 +28,10 @@ body {
     width: 100%;
     height: 100%;
 }
-
+.container-swiper{
+    width: 100%;
+    margin: auto;
+}
 #Quiz-3 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -91,4 +94,28 @@ body {
     color: #FFFFFF;
     font-weight: 500;
 
+}
+#Quiz-3 .first-img{
+    width: 150px;
+}
+
+
+@media (max-width: 768px) {
+    #Quiz-3 .first-img {
+       width: 100px;
+    }
+    #Quiz-3 .rectangle-1 h1 {
+        font-family: var(--font-f);
+        color: var(--font-c);
+        font-weight: var(--font-w-7);
+        font-size: 20px;
+    }
+    #Quiz-3 .rectangle-1 p {
+       
+        font-size: 12px;
+    }
+    #Quiz-3 .rectangle-1 .content  {
+       
+        padding: 10px 0px;
+    }
 }

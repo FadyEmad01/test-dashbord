@@ -47,7 +47,8 @@ body {
 }
 
 #Projects .content_container {
-  background: linear-gradient(122deg, rgba(249, 123, 188, 0.2) 42.75%, rgba(205, 146, 214, 0.2) 49.7%, rgba(134, 160, 243, 0.2) 58.3%, rgba(185, 208, 247, 0.2) 70.27%, rgba(217, 239, 247, 0.2) 81.46%);
+  background: linear-gradient(134.23deg, #F97CBC 17.94%, #84BCE7 42.96%, #9BC7E9 51.34%, #A7CDEA 55.35%, #D9EFF7 66.94%);
+
   border-radius: 15px;
 }
 
@@ -151,9 +152,67 @@ body {
     transition: opacity .5s;
   }
   
-
+/* .ovarl-lay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 0px 25px;
+  background-color: #131313;
+} */
+.ovarl-lay::after,
+.ovarl-lay::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 47px;
+  height: 40px;
+  width: 40px;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+.ovarl-lay::after{
+  border-radius: 0 0 25px 0;
+  background-color:#F2F2F2 ;
+}
+.image-content img{
+  position: relative;
+  z-index: 2;
+}
   
+.pagination {
+  --bs-pagination-padding-x: 0.75rem;
+  --bs-pagination-padding-y: 0.375rem;
+  --bs-pagination-font-size: 1rem;
+  --bs-pagination-color: #000000;
+  --bs-pagination-bg: #E0E0E0;
+  --bs-pagination-border-width: var(--bs-border-width);
+  --bs-pagination-border-color: var(--bs-border-color);
+  --bs-pagination-border-radius: var(--bs-border-radius);
+  --bs-pagination-hover-color: #FFFFFF;
+  --bs-pagination-hover-bg: #FFC436;
+  --bs-pagination-hover-border-color: var(--bs-border-color);
+  --bs-pagination-focus-color: var(--bs-link-hover-color);
+  --bs-pagination-focus-bg: var(--bs-secondary-bg);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-pagination-active-color: #fff;
+  --bs-pagination-active-bg: #0d6efd;
+  --bs-pagination-active-border-color: #0d6efd;
+  --bs-pagination-disabled-color: var(--bs-secondary-color);
+  --bs-pagination-disabled-bg: var(--bs-secondary-bg);
+  --bs-pagination-disabled-border-color: var(--bs-border-color);
+  display: flex;
+  padding-left: 0;
+  list-style: none
+} 
   
+#Projects .card:hover, .card:checked{
+  transform: scale(1.05) !important;
+}
+#Projects .card{
+transition: 0.4s;
+}
   
   
   

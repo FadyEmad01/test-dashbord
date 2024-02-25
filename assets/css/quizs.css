@@ -12,6 +12,7 @@
 }
 #Quizs .card{
     background-color: #2222220D;
+    border: 0;
 }
 #Quizs .rectangle-quiz{
     border: none;

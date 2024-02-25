@@ -12,6 +12,13 @@
     background-color: var(--bg-card);
     transition: 0.4s;
 }
+#Quizs-2 .first-quistion {
+    font-size: 22px;
+}
+#Quizs-2 .first-quistion , .font-color {
+    color: #222222BF;
+    
+}
 #Quizs-2 .form-check-input{
   border: 2px #148AE7 solid;
 }
@@ -25,7 +32,7 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    background-color: var(--bg-card);
+    background-color: var(--bg-main);
    
     overflow-x: hidden;
 }

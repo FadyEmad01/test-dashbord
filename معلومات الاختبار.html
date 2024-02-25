@@ -28,7 +28,7 @@
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
         rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/addHomework.css">
+    <link rel="stylesheet" href="assets/css/معلومات الاختبار.css">
     <link rel="stylesheet" href="assets/css/SHARED.css">
     <title>Document</title>
 </head>
@@ -85,13 +85,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="HomeWork.html" class="active">
+                    <a href="HomeWork.html" >
                         <i class="fa-solid fa-book-open"></i>
                         <span>الواجبات</span>
                     </a>
                 </li>
                 <li>
-                    <a href="Quiz-3.html">
+                    <a href="Quiz-3.html" class="active">
                         <i class="fa-solid fa-file"></i>
                         <span>الاختبارات</span>
                     </a>
@@ -137,11 +137,25 @@
             <!-- end nav and aside -->
             <div class=" pt-1 main-content card">
                 <main>
-                    <section id="Add-homework">
+                    <section id="QuizINFO">
                         <div class="container ">
+                        
                             <div class="row">
-                                <div class="form-card mt-3 pb-3">
-                                    <h4 class="py-4">اضافة واجب</h4>
+                                <div class="form-card mt-2 pb-3 pt-4">
+                                    <div class="container-circle">
+                                        <div class="row">
+                                            <div class="position-relative m-4">
+                                                <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                                                  <div class="progress-bar" style="width: 0%"></div>
+                                                </div>
+                                                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-outline-warning rounded-pill" style="width: 2rem; height:2rem; ">٣</button>
+                                                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-outline-warning rounded-pill" style="width: 2rem; height:2rem; ">٢</button>
+                                                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm  rounded-pill text-light" style="width: 2rem; height:2rem; background: linear-gradient(161deg, #FFC436 58%, #A6D8FF 100%); box-shadow: 4px -4px 20px rgba(229.49, 229.49, 229.49, 0.50);">١</button>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <h4 class="py-4">معلومات الاختبار</h4>
                                     <form class="row g-3">
                                         <div class="col-12">
                                             <label for="inputName" class="form-label">العنوان الرئيسي<span
@@ -174,12 +188,12 @@
                                                     <label class="form-label"
                                                         style="font-size: 25px; font-weight: 700;">الملفات</label>
                                                 </div>
-                                                <div>
+                                                <!-- <div>
                                                     <a href="./AddLectures.html"
                                                         class="btn btn-outline-warning m-2 py-2"
                                                         style="border-radius: 10px;">اضافة جديد <i
                                                             class="fa-solid fa-plus me-2"></i></a>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <div class="col-12 col-md-6">
 
@@ -275,15 +289,19 @@
                                         </div>
                                         <hr class="mt-5 mb-3">
                                         <div class="col-5">
+
                                             <label for="inputdeg"
                                                 style="font-size: 25px; font-weight: 700; color: #073051;"
-                                                class="form-label">التقديرات</label>
+                                                class="form-label">مدة الاختبار</label>
+                                                <label for="inputdeg"
+                                                style="font-size: 20px; font-weight: 400; color: #22222280;"
+                                                class="form-label">الفتره المسموح بها للانتهاء من الاختبار منذ بداية الفتح </label>
                                             <div class="row my-3">
-                                                <label for="inputdeg" class="col-sm-2 col-form-label">الدرجة<span
-                                                        style="color: #E63329;">*</span></label>
                                                 <div class="col-sm-6">
                                                     <input type="text" class="form-control" id="inputdeg">
                                                 </div>
+                                                <label for="inputdeg" class="col-sm-2 col-form-label">دقيقة</label>
+                                                
                                             </div>
 
                                         </div>
@@ -292,21 +310,20 @@
 
 
                                                 <div>
-                                                    <a href="HomeWork.html">
-                                                        <button class="btn btn-outline-warning m-2 py-2 ms-3"
-                                                            type="button"
-                                                            style="border-radius: 14px; padding-left: 40px;  padding-right: 40px;">الغاء
-                                                        </button>
+                                                    <a href="Quiz-table-again.html">
+                                                        <button class="btn btn-outline-warning m-2 py-2 ms-3" type="button"
+                                                        style="border-radius: 14px; padding-left: 40px;  padding-right: 40px;">الغاء
+                                                    </button>
                                                     </a>
-
+                                                  
 
                                                 </div>
 
 
                                                 <div>
-                                                    <a href="Homework-2.html"
+                                                    <a href="Quizs.html"
                                                         class="btn btn-warning py-2  text-light m-2 "
-                                                        style="border-radius: 14px; padding-left: 40px; padding-right: 40px;">حفظ
+                                                        style="border-radius: 14px; padding-left: 40px; padding-right: 40px;">التالي
                                                     </a>
                                                 </div>
 

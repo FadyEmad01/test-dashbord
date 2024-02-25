@@ -74,17 +74,7 @@
     font-weight: var(--font-w-4);
     color: #94A3B8;
 }
-#homework button {
-    display: flex;
-    align-items: center; 
-}
-#homework .dropdown-item{
-    text-align: start;
-}
-#homework .dropdown-menu{
-    background-color: #F9F9F9;
-    border: 0;
-}
+
 #homework li:hover{
     background-color: #E7F0FB;
 
@@ -106,7 +96,17 @@
     box-shadow: 6px 6px 10px 1px #0000000D;
     overflow-x: hidden;
 }
-
+#homework button {
+    display: flex;
+    align-items: center; 
+}
+#homework .dropdown-item{
+    text-align: start;
+}
+#homework .dropdown-menu{
+    background-color: #F9F9F9;
+    border: 0;
+}
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: var(--bs-dropdown-link-hover-color);
