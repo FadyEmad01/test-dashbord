@@ -60,3 +60,7 @@
     box-shadow: 1px 1px 3px 0px #0000001b;
     overflow-x: hidden;
 }
+.tabel-contaner {
+    overflow-y: auto;
+    max-height: 370px;
+}

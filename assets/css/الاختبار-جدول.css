@@ -1,0 +1,80 @@
+#QT .form-card{
+    background-color: var(--bg-card);
+    border-radius: 15px;
+}
+#QT .form-card h4{
+    font-size: var(--font-s-32);
+    font-weight: var(--font-w-7);
+    color: var(--font-c);
+}
+#QT .form-card label{
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-5);
+    color: var(--font-c);
+}
+#QT .edit-p{
+    margin-right: 20%;
+}
+@media(max-width: 764px){
+    #QT .edit-p{
+        margin-right: 0px;
+    }
+    #QT .contaner-table{
+        width: 95%; 
+        margin: auto;
+    }
+}
+/* .filepond--root {
+    max-height: 10em;
+} */
+
+.filepond--drop-label {
+	color: #4c4e53;
+}
+
+.filepond--label-action {
+	text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+	border-radius: 1.5em;
+	background-color: #edf0f4;
+	height: 2em;
+}
+
+.filepond--item-panel {
+	background-color: #595e68;
+}
+
+.filepond--drip-blob {
+	background-color: #7f8a9a;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../images/shape1.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../images/clock.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+.container-circle{
+    width: 60%;
+    margin: auto;
+}
+#QT table tr{
+height: 70px;
+}
+#QT .contaner-table{
+    width: 85%; 
+    margin: auto;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 5.3.2 -->
+    <link rel="stylesheet" href="./assests/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assests/vendors/font-awesome/all.min.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+    <!-- end font  -->
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css" />
+    <!-- end swiper -->
+    <!-- filepond -->
+    <link rel="stylesheet" href="assets/vendors/node_modules/filepond/dist/filepond.css">
+
+    <!-- <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" /> -->
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/الاختبار-جدول.css">
+    <link rel="stylesheet" href="assets/css/SHARED.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a class="toggle-ul">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-table"></i>
+                        <span>الصفحه الرئيسية</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Courses.html">
+                        <img src="assets/images/receipt (1).png" alt="" style="width: 18px;">
+                        <!-- <i class="fa-solid fa-table"></i> -->
+                        <span>المقررات </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Table.html">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>الجداول</span>
+                    </a>
+                </li>
+                <li class="lecture">
+                    <a href="Lectures.html">
+                        <i class="fa-solid fa-tv"></i>
+                        <div>
+                            <span>المحاضرات</span> <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </a>
+                    <div>
+                        <a href="lecturesTable.html">
+                            <i class="fa-solid fa-calendar-days ps-2"></i>
+                            <span>جدول المحاضرات</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="Attendnce.html">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>تسجيل الحضور</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="HomeWork.html" >
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>الواجبات</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Quiz-3.html" class="active">
+                        <i class="fa-solid fa-file"></i>
+                        <span>الاختبارات</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Projects.html">
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>المشاريع</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>الإعدادات</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Exit.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>تسجيل الخروج</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="project-design">
+            <!-- start header  -->
+            <div class="header">
+                <div class="info">
+                    <h3>مرحبا د/ محمد</h3>
+                    <span>البوابة الالكترونية للنظام الأكاديمي</span>
+                </div>
+                <div class="form">
+                    <div>
+                        <input type="text" placeholder="البحث...." name="search" id="search" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="image">
+                        <img src="assets/images/Frame.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- end header  -->
+            <!-- end nav and aside -->
+            <div class=" pt-1 main-content card">
+                <main>
+                    <section id="QT">
+                        <div class="container ">
+                        
+                            <div class="row">
+                                <div class="form-card mt-2 pb-3 pt-4">
+                                    <div class="container-circle ">
+                                        <div class="row">
+                                            <div class="position-relative m-4">
+                                                <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                                                  <div class="progress-bar" style="width: 0%"></div>
+                                                </div>
+                                                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-outline-warning rounded-pill" style="width: 2rem; height:2rem; ">٣</button>
+                                                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-outline-warning rounded-pill" style="width: 2rem; height:2rem; ">٢</button>
+                                                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm  rounded-pill text-light" style="width: 2rem; height:2rem; background: linear-gradient(161deg, #FFC436 58%, #A6D8FF 100%); box-shadow: 4px -4px 20px rgba(229.49, 229.49, 229.49, 0.50);">١</button>
+                                              </div>
+                                        </div>
+                                    </div>
+                                 <div class="contaner-table mt-5" >
+                                    <table class="table table1  table-bordered" style="width: 50%; margin: inherit; border-color: #E7F0FB;">
+                                        <thead>
+                                          <tr>
+                                            <th class="align-top" scope="col" style="background-color: #A1C2F140; width: 22%; color: #222222BF; border-radius: 0 10px 0 0;">اسم الاختبار :</th>
+                                            <td class="align-top" style="color: #22222280;">اختبار الفيزياء</td>
+                                            <!-- <th scope="col">Last</th>
+                                                  <th scope="col">Handle</th> -->
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF;">مدة الاختبار :</th>
+                                            <td style="color: #22222280;">١٢٠ دقيقة</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF;">اجمالي الاسأله :</th>
+                                            <td style="color: #22222280;">٤٠ سؤال</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF;">اجمالي الدرجة :</th>
+                                            <td style="color: #22222280;">60 نقطة</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF;">تاريخ بدء الاختبار :
+                                            </th>
+                                            <td style="color: #22222280;">23/2/2021</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF;">تاريخ نهاية الاختبار :
+                                            </th>
+                                            <td style="color: #22222280;">23/2/2021</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF;">الاختيار المتعدد :</th>
+                                            <td style="color: #22222280;">نقطتان لكل سؤال</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF;">صح / خطأ :</th>
+                                            <td style="color: #22222280;">نقطتان لكل سؤال</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF;">الاسئله المقاليه طويلة
+                                              :</th>
+                                            <td style="color: #22222280;">8 نقاط لكل سؤال</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" style="background-color: #A1C2F140; width: 22%; color: #222222BF; border-radius: 0 0 10px 0;">الاسئله المقاليه قصيرة
+                                              :</th>
+                                            <td style="color: #22222280;">5 نقاط لكل سؤال</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                 </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            FilePond.setOptions({
+                labelIdle: 'اسحب ملف او قم بالضغط لاضافة ملف '
+            });
+        });
+    </script>
+
+
+    <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendors/echarts/echarts.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+
+    <!-- FilePond JavaScript -->
+    <!-- <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-edit/dist/filepond-plugin-image-edit.js"></script>
+    
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script> -->
+    <!-- Include FilePond JavaScript -->
+    <!-- <script src="https://unpkg.com/filepond/dist/filepond.js"></script> -->
+    <!-- Include any additional FilePond plugins -->
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script
+        src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js">
+    </script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js">
+    </script>
+    <script src="https://unpkg.com/filepond-plugin-image-edit/dist/filepond-plugin-image-edit.js"></script>
+
+    <script src="assets/vendors/node_modules/filepond/dist/filepond.min.js"></script>
+    <!--  -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
