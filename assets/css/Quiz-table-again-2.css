@@ -73,5 +73,5 @@
 
 .tabel-contaner {
     overflow-y: auto;
-    max-height: 370px;
+    max-height: 470px !important;
 }
